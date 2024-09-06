@@ -1,0 +1,146 @@
+Materials Research
+	Semiconductor
+		Si
+		Organic Semiconductor
+		WBG semiconductor
+			GaN
+			SiC
+			AlGaN
+			AlN
+			AlScN
+	Superconductor
+
+	Thermoelectric
+	Piezo, magneto, and electro - hybrid material	piezoelectric
+		ferroelectric
+		magnetostrictive
+
+	Dielectric and Insulator (merge with Dielectric?)	SiO2
+		topological insulator
+		Si3N4
+
+	Dieletric Material (merge with Insulator?)
+		HfO2
+		low-k
+		high-k
+
+	2D Material
+
+	Structure and Geometry	Periodic Structure
+
+	Device Material
+		Ag
+		Al2O3
+		Au
+		Pt
+		W
+	Process Gas
+
+Microelectronics
+
+	Electronic device
+		GaN
+		II-VI
+		high-power devices
+		WBG devices
+		Transistor
+			GAA
+			FinFET
+			CMOS
+			CFET ?
+	Photonic device
+
+	Phononic device	BAW
+		SAW
+
+	Magnetic device	ferrite
+		MRAM
+
+	Mechanical device	MEMS
+		strain MEMS
+
+	Component	Polymer
+
+	Chipset
+
+	PCB (this is more like packaging)
+
+Advanced Packaging
+	Materials & Substrates
+		TSV
+	BEOL packaging
+		Wire bonding
+		Solder
+		Dicing
+		flip-chip processes
+		Adhesive
+		Interconnect
+	Photonics & Connectors	Interconnect
+
+	Equipment Tools & Processes
+	Power Delivery & Thermal Management
+	Chiplet
+	Reliability
+
+Manufacturing
+	Processes
+		Lithography
+		Inspection
+		Deposition 	Gas Flow Control
+		Etching 	Gas Flow Control
+		Polishing
+
+	Digital Twin
+
+Supply Chain
+Metrology
+	Computational Technique
+		Simulation
+		Modeling
+		AI/ML
+	Experimental Technique
+		Electrical	DC
+			High-Frequency
+
+		Diffraction and Scattering
+			X-ray
+			EBSD
+
+		Interferometry
+		Resonant Processes
+		Mechanical testing technqiues
+		Thermal	Calorimetry
+			Thermoreflectance
+
+		Rheology
+		Imaging
+			Optical Microscopy
+			Electron Microscopy
+		Spectroscopy
+
+		Cryogenics
+
+	Instrumentation
+		Microscope
+			Electron
+			Scanning Probe
+			Optical
+			X-ray
+		Beamline
+			Neutron
+			Synchrotron
+
+	Measurement	Phase Diagram
+		On-wafer
+		S-parameter
+		Strain
+		Dimension Metrology
+	Grand Challenge
+		Metrology for Materials Purity, Properties, and Provenance
+		Advanced Metrology for Future Microelectronics Manufacturing
+		Enabling Metrology for Integrating Components in Advanced Packaging
+		Modeling and Simulating Semiconductor Materials, Designs, and Components
+		​​​​​​​​​​​​​​Modeling and Simulating Semiconductor Manufacturing Processes
+		Standardizing New Materials, Processes, and Equipment for Microelectronics
+		Metrology to Enhance Security and Provenance of Microelectronic-based Components and Products
+			`
