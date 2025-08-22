@@ -1,17 +1,12 @@
 # METIS Taxonomy
 
-This repository is used in development of the METIS - Metrology Exchange to Innovate in Semiconductors data collection taxonomy.  
+This repository is used in development of the METIS - Metrology Exchange to Innovate in Semiconductors taxonomy.  The data model for METIS
+includes a rich array of domain metadata.   The taxonomy developed for METIS will be included in this repository for development and sharing.  The taxonomy is formalized in multiple representations to support METIS taxonomic tagging of products, to enhance discovery,  in addition to more standardized vocabulary format,  SKOS.
 
----
+## README.md
 
-## README
-
-
-1. Software or Data description
-   - Statements of purpose and maturity
-   - Description of the repository contents
-   - Technical installation instructions, including operating
-     system or software dependencies
+This repository includes the following taxonomy
+1. METIS Data Collection topic taxonomy - hierarchical terminology which spans across the CHIPS Metrology grand challenge project domains.  
 1. Contact information
    - Gretchen Greene, NIST ADLP, 606, Research Data and Computing Office
    - June Lau, NIST ADLP, 606, Research Data and Computing Office
@@ -19,8 +14,22 @@ This repository is used in development of the METIS - Metrology Exchange to Inno
    - june.lau@nist.gov
      
 1. Related Material
-   - https://metis.nist.gov beta public website
-   
+   - https://metis.nist.gov Public CHIPS Metrology website
+   - https://data.nist.gov/od/id/pdr0-0002 METIS Collection Landing Page
+
+# Taxonomy Principles
+
+Source: R. Arp, B. Smith, and A. D. Spear, Building Ontologies with Basic Formal Ontology. London, England: MIT Press, 2015.
+
+* Use singular nouns.
+* Use lowercase italic format for common nouns.
+* Avoid acronyms.
+* Each term should have a single meaning.
+* Each relational expressions should have a single meaning.
+* Avoid mass nouns.
+* Distinguish the general from the particular.
+* Structure every ontology around a core taxonomy - that is taxonomy is a core building block of ontology.
+
 
 ## LICENSE
 
