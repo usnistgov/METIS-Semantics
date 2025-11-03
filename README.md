@@ -82,11 +82,6 @@ themes are:
 ---
 
 -team
-[gh-rob]: https://odiwiki.nist.gov/pub/ODI/GitHub/GHROB.pdf
-[gh-tpl]: https://github.com/usnistgov/carpentries-development/discussions/3
-[li-bsd]: https://opensource.org/licenses/bsd-license
-[li-gpl]: https://opensource.org/licenses/gpl-license
-[li-mit]: https://opensource.org/licenses/mit-license
 [nist-code]: https://code.nist.gov
 [nist-disclaimer]: https://www.nist.gov/open/license
 [nist-s-1801-02]: https://inet.nist.gov/adlp/directives/review-data-intended-publication
