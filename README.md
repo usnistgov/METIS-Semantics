@@ -48,41 +48,6 @@ up-to-date official language for each category in a blue box.
   language from the appropriate "blue box" on that page into your
   README.
 
-## CODEMETA
-
-Project metadata is captured in `CODEMETA.yaml`, used by the NIST
-Software Portal to sort your work under the appropriate thematic
-homepage. ***Please update this file*** with the appropriate
-"theme" and "category" for your code/data/software. The Tier 1
-themes are:
-
-- [Advanced communications](https://www.nist.gov/advanced-communications)
-- [Bioscience](https://www.nist.gov/bioscience)
-- [Buildings and Construction](https://www.nist.gov/buildings-construction)
-- [Chemistry](https://www.nist.gov/chemistry)
-- [Electronics](https://www.nist.gov/electronics)
-- [Energy](https://www.nist.gov/energy)
-- [Environment](https://www.nist.gov/environment)
-- [Fire](https://www.nist.gov/fire)
-- [Forensic Science](https://www.nist.gov/forensic-science)
-- [Health](https://www.nist.gov/health)
-- [Information Technology](https://www.nist.gov/information-technology)
-- [Infrastructure](https://www.nist.gov/infrastructure)
-- [Manufacturing](https://www.nist.gov/manufacturing)
-- [Materials](https://www.nist.gov/materials)
-- [Mathematics and Statistics](https://www.nist.gov/mathematics-statistics)
-- [Metrology](https://www.nist.gov/metrology)
-- [Nanotechnology](https://www.nist.gov/nanotechnology)
-- [Neutron research](https://www.nist.gov/neutron-research)
-- [Performance excellence](https://www.nist.gov/performance-excellence)
-- [Physics](https://www.nist.gov/physics)
-- [Public safety](https://www.nist.gov/public-safety)
-- [Resilience](https://www.nist.gov/resilience)
-- [Standards](https://www.nist.gov/standards)
-- [Transportation](https://www.nist.gov/transportation)
-
----
-
 -team
 [nist-code]: https://code.nist.gov
 [nist-disclaimer]: https://www.nist.gov/open/license
