@@ -6,7 +6,7 @@ includes a rich array of domain metadata.   The taxonomy developed for METIS wil
 ## README.md
 
 This repository includes the following taxonomy
-1. METIS Data Collection topic taxonomy - hierarchical terminology which spans across the [CHIPS Metrology program grand challenge research domains](https://www.nist.gov/chips/research-development-programs/metrology-program).  
+1. METIS Digital Product Collection topic taxonomy - hierarchical terminology which spans across the [CHIPS Metrology program grand challenge research domains](https://www.nist.gov/chips/research-development-programs/metrology-program).  
 1. Contact information
    - Gretchen Greene, METIS Project Lead
       - NIST ADLP, Research Data and Computing Office
