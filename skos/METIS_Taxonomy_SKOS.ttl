@@ -70,26 +70,37 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 #    Individuals
 #################################################################
 
+###  http://data.nist.gov/od/dm/chips-metrology/topics/Ag
+:Ag rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:broader :Metal ;
+        skos:definition """Research topic that focuses on:
+(1) The use of silver in semiconductor materials or devices
+(2) The characterization and measurement of silver properties in semiconductors 
+(3) The impact of silver on semiconductor performance or reliability."""@en ;
+        skos:prefLabel "CHIPS Metrology: Materials Research: Metal: Ag" .
+
+
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Al2SO3
 :Al2SO3 rdf:type owl:NamedIndividual ,
                  skos:Concept ;
-        skos:broader :Device_Material ;
+        skos:broader :Dielectric_and_Insulator ;
         skos:definition """Research topic that: 
 (1) focuses on the study of aluminum sulfite as a material for semiconductor devices; 
 (2) investigates its properties, fabrication, and application in the microelectronics industry; 
 (3) relates to the specific measurements and standards required for ensuring device performance and quality."""@en ;
-        skos:prefLabel "CHIPS Metrology: Materials Research: Device Material: Al2SO3" .
+        skos:prefLabel "CHIPS Metrology: Materials Research: Dielectric and Insulator: Al2SO3" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Au
 :Au rdf:type owl:NamedIndividual ,
              skos:Concept ;
-    skos:broader :Device_Material ;
+    skos:broader :Metal ;
     skos:definition """Research topic that: 
 (1) explores the use of gold in semiconductor device fabrication; 
 (2) examines gold's properties and performance in electronic components; 
 (3) evaluates the metrological methods used to assess gold's characteristics and quality in chip manufacturing."""@en ;
-    skos:prefLabel "CHIPS Metrology: Materials Research: Device Material: Au" .
+    skos:prefLabel "CHIPS Metrology: Materials Research: Metal: Au" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/CHIPS_Metrology
@@ -144,6 +155,17 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
             skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Cryogenics" .
 
 
+###  http://data.nist.gov/od/dm/chips-metrology/topics/Cu
+:Cu rdf:type owl:NamedIndividual ,
+                 skos:Concept ;
+        skos:broader :Metal ;
+        skos:definition """Research topic about:
+(1) The presence and characteristics of copper within semiconductor materials or devices
+(2) Methods for measuring and analyzing copper concentrations, distribution, and behavior in semiconductors
+(3) Impacts of copper on semiconductor performance and reliability."""@en ;
+        skos:prefLabel "CHIPS Metrology: Materials Research: Metal: Cu" .
+
+
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Deposition
 :Deposition rdf:type owl:NamedIndividual ,
                      skos:Concept ;
@@ -154,16 +176,6 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 (3) integration of metrology and deposition processes for improved yield and productivity; 
 (4) characterization of deposition process-induced defects and their impact on device performance.""" ;
             skos:prefLabel "CHIPS Metrology: Manufacturing: Processes: Deposition" .
-
-
-###  http://data.nist.gov/od/dm/chips-metrology/topics/Device_Material
-:Device_Material rdf:type owl:NamedIndividual ,
-                          skos:Concept ;
-                 skos:broader :Materials_Research ;
-                 skos:definition """Research topic that: 
-(1) focuses on the specialized materials that are used in the fabrication of semiconductor devices and their characterization and measurement to ensure optimal performance and reliability in microelectronics; 
-(2) includes metals, semiconductors, and insulators."""@en ;
-                 skos:prefLabel "CHIPS Metrology: Materials Research: Device Material" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Dielectric_and_Insulator
@@ -191,12 +203,15 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
                             skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Diffraction and Scattering" .
 
 
-###  http://data.nist.gov/od/dm/chips-metrology/topics/Dimension_Metrology
-:Dimension_Metrology rdf:type owl:NamedIndividual ,
+###  http://data.nist.gov/od/dm/chips-metrology/topics/Dimensional
+:Dimensional rdf:type owl:NamedIndividual ,
                               skos:Concept ;
                      skos:broader :Measurement ;
-                     skos:definition "Research topic that: (1) Focuses on the precision measurement and characterization of semiconductor materials and devices. (2) Develops and utilizes experimental techniques for accurate data acquisition. Involves advanced methods for dimensional analysis and metrology."@en ;
-                     skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement: Dimension Metrology" .
+                     skos:definition """Research topic that:
+(1) Focuses on the precision measurement and characterization of semiconductor materials and devices.
+(2) Develops and utilizes experimental techniques for accurate data acquisition. 
+(3) Involves advanced methods for dimensional analysis and metrology."""@en ;
+                     skos:prefLabel "CHIPS Metrology: Metrology: Measurement: Dimensional" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/EBSD
@@ -282,7 +297,7 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Experimental_Technique
 :Experimental_Technique rdf:type owl:NamedIndividual ,
                                  skos:Concept ;
-                        skos:broader :CHIPS_Metrology ;
+                        skos:broader :Metrology ;
                         skos:definition """Research topic that:
 (1) focuses on the measurement and characterization of semiconductor materials and devices, and involves the use of advanced experimental methods and tools;
 (2) aims to improve the accuracy, precision, and reliability of measurements in semiconductor manufacturing."""@en ;
@@ -311,19 +326,23 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
                      skos:prefLabel "CHIPS Metrology: Materials Research: Semiconductor: Structure and Geometry: Geometric Structure" .
 
 
-###  http://data.nist.gov/od/dm/chips-metrology/topics/Grand_Challenges
-:Grand_Challenges rdf:type owl:NamedIndividual ,
+###  http://data.nist.gov/od/dm/chips-metrology/topics/Grand_Challenge
+:Grand_Challenge rdf:type owl:NamedIndividual ,
                            skos:Concept ;
-                  skos:broader :Experimental_Technique ;
+                  skos:broader :Metrology ;
                   skos:definition "Research topic that focuses on experimental techniques that support CHIPS Grand Challenges."@en ;
-                  skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenges" .
+                  skos:prefLabel "CHIPS Metrology: Metrology: Grand Challenge" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/HfO2
 :HfO2 rdf:type owl:NamedIndividual ,
                skos:Concept ;
       skos:broader :Dielectric_and_Insulator ;
-      skos:definition "Research topic that: (1) Characterization of hafnium dioxide (HfO2) properties and performance. (2) Evaluation of HfO2 as a dielectric and insulator in semiconductor devices. (3) Methods and techniques for measuring the structural, electrical, and thermal properties of HfO2. (4) Investigation of the manufacturing processes and quality control for HfO2-based materials and components."@en ;
+      skos:definition """Research topic that: 
+(1) Characterization of hafnium dioxide (HfO2) properties and performance.
+(2) Evaluation of HfO2 as a dielectric and insulator in semiconductor devices.
+(3) Methods and techniques for measuring the structural, electrical, and thermal properties of HfO2.
+(4) Investigation of the manufacturing processes and quality control for HfO2-based materials and components."""@en ;
       skos:prefLabel "CHIPS Metrology: Materials Research: Dielectric and Insulator: HfO2" .
 
 
@@ -398,11 +417,11 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Magnetic_Materials
 :Magnetic_Materials rdf:type owl:NamedIndividual ,
                              skos:Concept ;
-                    skos:broader :Device_Material ;
+                    skos:broader :Metal ;
                     skos:definition """Research topic that: 
 (1) examines magnetic material use in the development of microelectronic devices, such as sensors, actuators, and memory storage devices; 
 (2) focuses on magnetic material metrological properties."""@en ;
-                    skos:prefLabel "CHIPS Metrology: Materials Research: Device Material: Magnetic Materials" .
+                    skos:prefLabel "CHIPS Metrology: Materials Research: Metal: Magnetic Materials" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Manufacturing
@@ -430,11 +449,11 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Measurement
 :Measurement rdf:type owl:NamedIndividual ,
                       skos:Concept ;
-             skos:broader :Experimental_Technique ;
+             skos:broader :Metrology ;
              skos:definition """A research topic that:
 (1) focuses on the precise and accurate characterization of semiconductor materials and devices, and involves the use of specialized tools and methodologies to gather experimental data;
 (2) aims to improve the measurement processes and standards applied in the semiconductor industry."""@en ;
-             skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement" .
+             skos:prefLabel "CHIPS Metrology: Metrology: Measurement" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Mechanical_Device
@@ -447,6 +466,19 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 (3) measurement and characterization of behavior and properties of mechanical devices for microelectronics under various operating conditions (e.g. temperature, humidity, vibration);
 (4) application of metrology techniques to ensure quality control, reliability, and performance of mechanical devices in microelectronic systems.""" ;
                    skos:prefLabel "CHIPS Metrology: Microelectronics: Mechanical Device" .
+
+
+###  http://data.nist.gov/od/dm/chips-metrology/topics/Metal
+:Metal rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:broader :Materials_Research ;
+                   skos:definition """
+                   Research topic about:
+(1) The role of metals in semiconductor device fabrication
+(2) The electrical and thermal conductivity properties of metals
+(3) Techniques for measuring and analyzing metal films and structures in semiconductors
+(4) The impact of metal impurities on semiconductor performance and reliability"""@en;
+                   skos:prefLabel "CHIPS Metrology: Materials Research: Metal" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Microelectronics
@@ -462,12 +494,22 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
                   skos:prefLabel "CHIPS Metrology: Microelectronics" .
 
 
+###  http://data.nist.gov/od/dm/chips-metrology/topics/Nanoparticle
+:Nanoparticle rdf:type owl:NamedIndividual ,
+                          skos:Concept ;
+                 skos:broader :Materials_Research ;
+                 skos:definition """Research topic that: 
+(1) Focuses on the measurement and characterization of particles at the nanoscale 
+(2) Involves techniques to determine size, shape, surface area, and distribution of nanoparticles 
+(3) Aims to ensure precision and accuracy in the application and study of nanomaterials."""@en ;
+                 skos:prefLabel "CHIPS Metrology: Materials Research: Nanoparticle" .
+
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/On-wafer
 :On-wafer rdf:type owl:NamedIndividual ,
                    skos:Concept ;
           skos:broader :Measurement ;
           skos:definition "Research topic that: (1) Focuses on the development and refinement of techniques to measure electrical and physical characteristics directly on semiconductor wafers. (2) Enhances process control, yields, and quality assurance in semiconductor manufacturing. (3) Is critical for scaling down integrated circuits to meet advanced technological demands."@en ;
-          skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement: On-wafer" .
+          skos:prefLabel "CHIPS Metrology: Metrology: Measurement: On-wafer" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Organic_Semiconductor
@@ -486,7 +528,7 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
                         skos:Concept ;
                skos:broader :Measurement ;
                skos:definition "Research topic that: (1) Uses phase diagrams to understand the properties and behaviors of materials used in microelectronics as a function of temperature, composition, and pressure. (2) Identifies of phase transitions and critical points within the material system. (3) Correlates material properties with different phases to understand performance and application."@en ;
-               skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement: Phase Diagram" .
+               skos:prefLabel "CHIPS Metrology: Metrology: Measurement: Phase Diagram" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Photonic_Device
@@ -526,28 +568,31 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Pt
 :Pt rdf:type owl:NamedIndividual ,
              skos:Concept ;
-    skos:broader :Device_Material ;
+    skos:broader :Metal ;
     skos:definition """Research topic that: 
 (1) characterization and properties of platinum as a material for various devices, such as transistors or sensors; 
 (2) exploration of platinum’s performance and suitability for precise and accurate measurement and characterization of semiconductors."""@en ;
-    skos:prefLabel "CHIPS Metrology: Materials Research: Device Material: Pt" .
+    skos:prefLabel "CHIPS Metrology: Materials Research: Metal: Pt" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Research_Topic
 :Research_Topic rdf:type owl:NamedIndividual ,
                          skos:Concept ;
-                skos:broader :Topic ,
-                             ":Topic" ;
-                skos:definition "Represents a specific topic of study. Requires exploration and analysis to gain new knowledge or understanding. Is a focus of systematic inquiry and investigation."@en ;
+                skos:broader :Topic ;
+                skos:definition """Represents a specific topic of study that:
+(1) Requires exploration and analysis to gain new knowledge or understanding. 
+(2) Is a focus of systematic inquiry and investigation."""@en ;
                 skos:prefLabel "Research Topic" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Resonant_Processes
 :Resonant_Processes rdf:type owl:NamedIndividual ,
                              skos:Concept ;
-                    skos:broader :Measurement ;
-                    skos:definition "Research topic that: (1) Investigates the frequency-specific behavior of materials or devices. Utilizes resonant behavior to probe physical properties in semiconductors and microelectronics. (2) Utilizes advanced experimental techniques to measure and analyze resonant processes in microelectronics."@en ;
-                    skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement: Resonant Processes" .
+                    skos:broader :Experimental_Technique ;
+                    skos:definition """Research topic that: 
+(1) Investigates the frequency-specific behavior of materials or devices. Utilizes resonant behavior to probe physical properties in semiconductors and microelectronics.
+(2) Utilizes advanced experimental techniques to measure and analyze resonant processes in microelectronics."""@en ;
+                    skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Resonant Processes" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Rheology
@@ -566,18 +611,7 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
                       skos:Concept ;
              skos:broader :Measurement ;
              skos:definition "Research topic that: (1) Involves the measurement and characterization of high-frequency properties of microelectronic devices. (2) Utilizes experimental techniques such as vector network analysis. (3) Employs S-parameter analysis to assess the high-frequency response and signal integrity of electronic components."@en ;
-             skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement: S-parameter" .
-
-
-###  http://data.nist.gov/od/dm/chips-metrology/topics/Sapphire
-:Sapphire rdf:type owl:NamedIndividual ,
-                   skos:Concept ;
-          skos:broader :Device_Material ;
-          skos:definition """Research topic that: 
-(1) focuses on the properties and applications of sapphire in manufacturing and measuring semiconductor devices; 
-(2) explores the advantages and challenges of using sapphire in high-precision, semiconductor-related metrology processes; 
-(3) investigates the contribution of sapphire-based materials to the improvement of device performance and durability in the semiconductor industry."""@en ;
-          skos:prefLabel "CHIPS Metrology: Materials Research: Device Material: Sapphire" .
+             skos:prefLabel "CHIPS Metrology: Metrology: Measurement: S-parameter" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Semiconductor
@@ -607,7 +641,10 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 :SiO2 rdf:type owl:NamedIndividual ,
                skos:Concept ;
       skos:broader :Dielectric_and_Insulator ;
-      skos:definition "Research topic that: (1) Involves the study of silicon dioxide as a dielectric material. (2) Focuses on the measurement and characterization of silicon dioxide properties. (3) Explores the application of metrology to understand the behavior of silicon dioxide as an insulator. (4) Examines the structural and electrical properties of silicon dioxide in various contexts."@en ;
+      skos:definition """Research topic that: 
+(1) Involves the study of silicon dioxide as a dielectric material. 
+(2) Focuses on the measurement and characterization of silicon dioxide properties. 
+(3) Explores the application of metrology to understand the behavior of silicon dioxide as an insulator. (4) Examines the structural and electrical properties of silicon dioxide in various contexts."""@en ;
       skos:prefLabel "CHIPS Metrology: Materials Research: Dielectric and Insulator: SiO2" .
 
 
@@ -626,26 +663,33 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 :Strain rdf:type owl:NamedIndividual ,
                  skos:Concept ;
         skos:broader :Measurement ;
-        skos:definition "Research topic that: (1) Investigates methods for characterizing and quantifying strain in semiconductor materials and devices. (2) Utilizes various experimental techniques and advanced metrology tools. (3) Aims to improve the precision and reliability of strain measurements to enhance semiconductor performance and manufacturing."@en ;
-        skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Measurement: Strain" .
+        skos:definition """Research topic that: 
+(1) Investigates methods for characterizing and quantifying strain in semiconductor materials and devices. 
+(2) Utilizes various experimental techniques and advanced metrology tools. 
+(3) Aims to improve the precision and reliability of strain measurements to enhance semiconductor performance and manufacturing."""@en ;
+        skos:prefLabel "CHIPS Metrology: Metrology: Measurement: Strain" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Structure_and_Geometry
 :Structure_and_Geometry rdf:type owl:NamedIndividual ,
                                  skos:Concept ;
-                        skos:broader :Semiconductor ;
+                        skos:broader :Materials_Research ;
                         skos:definition """Research topic that: 
 (1) focuses on the arrangement and shape of semiconductor materials; 
 (2) investigates the impact of structural and geometric properties on the performance of semiconductor devices; 
 (3) involves metrology techniques to measure and characterize these properties for quality control and innovation in the semiconductor industry."""@en ;
-                        skos:prefLabel "CHIPS Metrology: Materials Research: Semiconductor: Structure and Geometry" .
+                        skos:prefLabel "CHIPS Metrology: Materials Research: Structure and Geometry" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/Thermal
 :Thermal rdf:type owl:NamedIndividual ,
                   skos:Concept ;
          skos:broader :Experimental_Technique ;
-         skos:definition "Research topic that: (1) Focuses on the measurement and characterization of semiconductor materials and devices. (2) Utilizes various experimental techniques to analyze heat flow and thermal properties. (3) Characterizes thermal interfaces and heat dissipation mechanisms in microelectronics. (4) Aims to improve the performance, reliability, and efficiency of microelectronic components through thermal management."@en ;
+         skos:definition """Research topic that: 
+(1) Focuses on the measurement and characterization of semiconductor materials and devices.
+(2) Utilizes various experimental techniques to analyze heat flow and thermal properties. 
+(3) Characterizes thermal interfaces and heat dissipation mechanisms in microelectronics. 
+(4) Aims to improve the performance, reliability, and efficiency of microelectronic components through thermal management."""@en ;
          skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Thermal" .
 
 
@@ -668,12 +712,12 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/W
 :W rdf:type owl:NamedIndividual ,
             skos:Concept ;
-   skos:broader :Device_Material ;
+   skos:broader :Metal ;
    skos:definition """Research topic that: 
 (1) investigates the use of tungsten in electronic devices; 
 (2) focuses on the properties and performance of tungsten for use in semiconductors; 
 (3) addresses the application of tungsten in metrology for ensuring precise measurements in semiconductors."""@en ;
-   skos:prefLabel "CHIPS Metrology: Materials Research: Device Material: W" .
+   skos:prefLabel "CHIPS Metrology: Materials Research: Metal: W" .
 
 
 ###  http://data.nist.gov/od/dm/chips-metrology/topics/X-ray
@@ -684,50 +728,50 @@ skos:prefLabel rdf:type owl:DatatypeProperty .
 (1) focuses on the precise measurement and characterization of semiconductor materials and devices; 
 (2) utilizes experimental techniques involving diffraction and scattering methods; 
 (3) employs X-ray technology to investigate the structural properties and behaviors of materials at an atomic or molecular level."""@en ;
-       skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Diffraction and Scattering: X-ray" .
+skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Diffraction and Scattering: X-ray" .
 
 
-###  https://data.nist.gov/od/dm/chips-metrology/topics#4-Modeling_and_Simulating_Semiconductor_Materials,_Designs,_and_Components
-<https://data.nist.gov/od/dm/chips-metrology/topics#4-Modeling_and_Simulating_Semiconductor_Materials,_Designs,_and_Components> rdf:type owl:NamedIndividual ,
-                                                                                                                                         skos:Concept ;
-                                                                                                                                skos:broader :Grand_Challenges ;
-                                                                                                                                skos:definition """CHIPS Metrology: Metrology: Experimental Technique: Grand Challenges: “4-Modeling and Simulating Semiconductor Materials, Designs, and Components” is a research topic about 
+###  https://data.nist.gov/od/dm/chips-metrology/topics/4-Modeling_and_Simulating_Semiconductor_Materials_Designs_and_Components
+:4-Modeling_and_Simulating_Semiconductor_Materials_Designs_and_Components rdf:type owl:NamedIndividual ,
+skos:Concept ;
+skos:broader :Grand_Challenge ;
+skos:definition """Research topic about 
 (1) creating advanced metrology tools and models that capture the complex interactions between thermal, chemical, physical, mechanical, and other parameters in next-generation semiconductor materials and devices; 
 (2) making precise measurements of material, component, and circuit properties over a wide range of temperatures, biases, and frequencies to inform and validate models of semiconductor devices and systems; 
 (3) leveraging advanced analytics techniques, such as machine learning and artificial intelligence, to model, optimize, and validate complex semiconductor materials, circuits, and systems, as well as to estimate and manage model uncertainty.""" ;
-                                                                                                                                skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenges: “4-Modeling and Simulating Semiconductor Materials, Designs, and Components”" .
+skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenge: “4-Modeling and Simulating Semiconductor Materials, Designs, and Components”" .
 
 
-###  https://data.nist.gov/od/dm/chips-metrology/topics#AI_&_Machine_Learning
-<https://data.nist.gov/od/dm/chips-metrology/topics#AI_&_Machine_Learning> rdf:type owl:NamedIndividual ,
-                                                                                    skos:Concept ;
-                                                                           skos:broader :Computational_Technique ;
-                                                                           skos:definition """Research topic that: 
+###  https://data.nist.gov/od/dm/chips-metrology/topics/AI_&_Machine_Learning
+:AI_and_Machine_Learning rdf:type owl:NamedIndividual ,
+                              skos:Concept ;
+                        skos:broader :Computational_Technique ;
+                        skos:definition """Research topic that: 
 (1) focuses on the precise measurement and characterization of semiconductor components; 
 (2) utilizes advanced computational methods for data analysis and simulation; 
 (3) integrates artificial intelligence and machine learning algorithms to enhance accuracy, efficiency, and predictive capabilities in semiconductor manufacturing processes."""@en ;
-                                                                           skos:prefLabel "CHIPS Metrology: Metrology: Computational Technique: AI & Machine Learning" .
+skos:prefLabel "CHIPS Metrology: Metrology: Computational Technique: AI & Machine Learning" .
 
 
-###  https://data.nist.gov/od/dm/chips-metrology/topics#CHIPS_Metrology:_Metrology:_Experimental_Technique:_Grand_Challenges:_“3-Enabling_Metrology_for_Integrating_Components_in_Advanced_Packaging”
-<https://data.nist.gov/od/dm/chips-metrology/topics#CHIPS_Metrology:_Metrology:_Experimental_Technique:_Grand_Challenges:_“3-Enabling_Metrology_for_Integrating_Components_in_Advanced_Packaging”> rdf:type owl:NamedIndividual ,
-                                                                                                                                                                                                            skos:Concept ;
-                                                                                                                                                                                                   skos:broader :Grand_Challenges ;
-                                                                                                                                                                                                   skos:definition """Research topic about experimental techniques that support:
+###  https://data.nist.gov/od/dm/chips-metrology/topics/3-Enabling_Metrology_for_Integrating_Components_in_Advanced_Packaging
+:3-Enabling_Metrology_for_Integrating_Components_in_Advanced_Packaging rdf:type owl:NamedIndividual ,
+skos:Concept ;
+skos:broader :Grand_Challenge ;
+skos:definition """Research topic about experimental techniques that support:
 (1) developing new metrology techniques to enable the complex integration of sophisticated components and novel materials in advanced microelectronics packaging;
 (2) creating measurements and verification methods for characterizing interfaces, subsurface interconnects, and internal 3D structures, including warpage, voids, and stresses, with improved throughput and resolution;
 (3) establishing standards and methods for integrating chiplets, Systems on a Chip (SoCs), and other components into packages, including the development of reference materials."""@en ;
-                                                                                                                                                                                                   skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenges: “3-Enabling Metrology for Integrating Components in Advanced Packaging”" .
+skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenge: “3-Enabling Metrology for Integrating Components in Advanced Packaging”" .
 
 
-###  https://data.nist.gov/od/dm/chips-metrology/topics#“1-Metrology_for_Materials_Purity,_Properties,_and_Provenance”
-<https://data.nist.gov/od/dm/chips-metrology/topics#“1-Metrology_for_Materials_Purity,_Properties,_and_Provenance”> rdf:type owl:NamedIndividual ,
-                                                                                                                             skos:Concept ;
-                                                                                                                    skos:broader :Grand_Challenges ;
-                                                                                                                    skos:definition """Research topic about experimental techniques that support:
+###  https://data.nist.gov/od/dm/chips-metrology/topics/1-Metrology_for_Materials_Purity_Properties_and_Provenance
+:1-Metrology_for_Materials_Purity_Properties_and_Provenance rdf:type owl:NamedIndividual ,
+skos:Concept ;
+skos:broader :Grand_Challenge ;
+skos:definition """Research topic about experimental techniques that support:
 (1) developing new measurements and standards to ensure the purity, physical properties, and provenance of materials;
 (2) improving the detection of particles and contaminants in materials, as well as characterizing their physical properties, particularly for microelectronics feed materials."""@en ;
-                                                                                                                    skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenges: “1-Metrology for Materials Purity, Properties, and Provenance”" .
+skos:prefLabel "CHIPS Metrology: Metrology: Experimental Technique: Grand Challenge: “1-Metrology for Materials Purity, Properties, and Provenance”" .
 
 
 #################################################################
