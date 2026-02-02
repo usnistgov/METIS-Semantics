@@ -1,0 +1,189 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <https://data.nist.gov/od/dm/metis-tabular-data/v0.1#> .
+
+<http://www.w3.org/2002/07/owl#Thing> rdf:type rdfs:Class .
+<http://www.w3.org/2002/07/owl#Thing> skos:prefLabel "Thing" .
+<http://www.w3.org/2002/07/owl#Thing> rdfs:comment "Represents entities in a taxonomy modelled as a Python class hierarchy" .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> skos:prefLabel "Average" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> skos:definition "Average represents the average of the measured values." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> skos:prefLabel "Calibrated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> skos:definition "Calibrated suggests that the measurements have been corrected using calibration standards." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> skos:prefLabel "Dependent" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> skos:definition "Depdendent refers to a value that is being measured or tested in an experiment and is expected to change as a result of the manipulation of an independent value." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> skos:prefLabel "Dimensional" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> skos:definition "Dimensional refers to a quantity or property that is related to the size or shape of an object or feature." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> skos:prefLabel "DimensionalProperties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> skos:definition "Dimensional properties are characteristics that\n\n- Describe the physical dimensions of an object or feature\n\n- Include measurements such as length, width, height, and thickness\n\n- Define the size and shape of a component or structure" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> skos:prefLabel "Effective" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> skos:definition "Effective is a measure of the magnitude of a fluctuating quantity, representing the equivalent constant value that would produce the same effect." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> skos:prefLabel "FirstOrderDiffractionEfficiency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> skos:definition "First order diffraction efficiency is a measurement that\n\n- Quantifies the effectiveness of a diffraction grating\n\n- Measures the intensity of light diffracted into the first-order maximum\n\n- Indicates the performance of optical components in directing specific wavelengths of light" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> skos:prefLabel "Frequency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> skos:definition "Frequency is a physical quantity that measures the number of occurrences or cycles of a phenomenon per unit time." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> skos:prefLabel "GrazingAngleOfIncidence" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> skos:definition "Grazing angle of incidence is an angle that\n\n- Refers to the angle between an incoming wave or particle and the surface it encounters\n\n- Is very small, close to parallel to the surface\n\n- Used in techniques such as X-ray or neutron reflectometry to study surface properties." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> skos:prefLabel "HarmonicNumber" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> skos:definition "Harmonic number is a parameter that\n\n- Indicates the integer multiples of a fundamental frequency in a- signal\n\n- Defines the order of harmonics in a periodic waveform\n\n- Affects the shape and characteristics of the waveform" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> skos:prefLabel "Independent" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> skos:definition "Independent refers to a value that is manipulated or changed in an experiment and is assumed to have a direct effect on a dependent value." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> skos:prefLabel "IsGeometric" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> skos:prefLabel "IsPhysicalProperty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> skos:prefLabel "IsQualifier" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> skos:prefLabel "IsWaveOrFieldRelated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> skos:prefLabel "LineWidthInADiffractionMeasurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> skos:definition "Line width in a diffraction measurement is a characteristic that\n\n- Describes the width of a diffraction peak\n\n- Is measured in a diffraction pattern\n\n- Relates to the structural properties of the material being analyzed" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> skos:prefLabel "MagneticField" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> skos:definition "A magnetic field is a physical field that\n\n- Is generated by the motion of charged particles, such as electrons\n\n- Surrounds magnets and current-carrying conductors\n\n- Exerts a force on other charged particles or magnets\n\n- Is represented by field lines that indicate the direction and strength of the force." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> skos:prefLabel "Magnetization" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> skos:definition "Magnetization is a physical property that\n\n- is a measure of the magnetic moment per unit volume of a material\n\n- describes the degree to which a material is magnetized\n\n- results from the alignment of magnetic dipoles in the material." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> skos:prefLabel "Measured" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> skos:definition "Measured indicates that the value is obtained through actual measurements." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> skos:prefLabel "Nominal" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> skos:definition "Nominal refers to the expected or designed value of a measurand." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> skos:prefLabel "Patterned" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> skos:definition "Patterned refers to a structure or feature that has been created with a specific arrangement or geometry." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> skos:prefLabel "PitchInADiffractionMeasurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> skos:definition "Pitch in a diffraction measurement is a characteristic that\n\n- Refers to the distance between two adjacent features or patterns\n\n- Is typically measured between identical points on adjacent features\n\n- Characterizes the spatial periodicity of a structure or pattern." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> skos:prefLabel "Reference" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> skos:definition "Reference used for measurements or standards that serve as a basis for comparison or calibration." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> skos:prefLabel "ReflectionCoefficient" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> skos:definition "A reflection coefficient is a dimensionless quantity that describes the ratio of the amplitude of a reflected wave to the amplitude of the incident wave." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> skos:prefLabel "RotationAngleInADiffractionMeasurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> skos:definition "A rotation angle in a diffraction measurement is\n\n- The angle by which a sample is rotated during the process of diffraction analysis\n\n- Determines the orientation of the sample with respect to the incident X-ray beam\n\n- Affects the diffraction pattern obtained from the sample." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> skos:prefLabel "SampleRotationAngle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> skos:definition "Sample rotation angle is an angular measurement that\n\n- Describes the orientation of a sample\n\n- Is defined relative to a reference axis or direction\n\n- Characterizes the sample's position in a specific coordinate system" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> skos:prefLabel "Simulated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> skos:definition "Simulated refers to values obtained through simulation models rather than direct measurement." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> skos:prefLabel "Traceable" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> skos:definition "Traceable implies that the measurements are linked to a recognized standard, such as the SI units." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> skos:prefLabel "TransmissionCoefficient" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> skos:definition "A transmission coefficient is a dimensionless quantity that describes ratio of the transmitted intensity or amplitude of the incident wave to the incident intensity or amplitude." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> skos:prefLabel "Validated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> skos:definition "Validated indicates that the measurements or models have been verified through comparison with known standards or other means." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsQualifier> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> skos:prefLabel "WaveguideGeometry" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> skos:definition "Waveguide geometry is a structural configuration that\n\n- Defines the physical shape and dimensions of a waveguide\n\n- Controls the propagation of electromagnetic waves through the waveguide\n\n- Determines the performance characteristics such as mode distribution and attenuation." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> skos:prefLabel "WaveguideLength" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> skos:definition "Waveguide length is a measurement that\n\n- Pertains to the physical dimension of a waveguide\n\n- Represents the distance over which an electromagnetic wave travels within the waveguide\n\n- Influences the phase and group velocity of signals passing through the waveguide" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> skos:prefLabel "WaveguideWidth" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> skos:definition "Waveguide width is a physical dimension that\n\n- Refers to the width of a waveguide structure\n\n- Determines the mode and propagation characteristics of electromagnetic waves within the waveguide\n\n- Influences the performance and efficiency of signal transmission." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> skos:prefLabel "Wavelength" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> skos:definition "Wavelength is a physical property that\n\n- Represents the distance between successive crests or troughs of a wave\n\n- Determines the wave's frequency and energy\n\n- Is measured in units of length, such as meters or nanometers" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsPhysicalProperty> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsGeometric> .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#IsWaveOrFieldRelated> .
+
