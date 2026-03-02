@@ -1,0 +1,295 @@
+{
+  "profile": "https://specs.frictionlessdata.io/schemas/data-package.json",
+  "name": "euv_scatterometry_diffraction_efficiency",
+  "title": "EU\u2011V Scatterometry Diffraction Efficiency Measurements",
+  "description": "Measured first\u2011order diffraction efficiencies (positive and negative) and their standard deviations for a series of line\u2011width/pitch samples at various grazing angles of incidence.",
+  "resources": [
+    {
+      "name": "l50p100_full",
+      "path": "L50P100_full.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "angles",
+            "type": "number",
+            "description": "Grazing angle of incidence (degrees)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence"
+            ]
+          },
+          {
+            "name": "m1_c1",
+            "type": "number",
+            "description": "Negative 1st\u2011order diffraction efficiency (color 1)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c2",
+            "type": "number",
+            "description": "Negative 1st\u2011order diffraction efficiency (color 2)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c3",
+            "type": "number",
+            "description": "Negative 1st\u2011order diffraction efficiency (color 3)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c4",
+            "type": "number",
+            "description": "Negative 1st\u2011order diffraction efficiency (color 4)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c5",
+            "type": "number",
+            "description": "Negative 1st\u2011order diffraction efficiency (color 5)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c6",
+            "type": "number",
+            "description": "Negative 1st\u2011order diffraction efficiency (color 6)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c1",
+            "type": "number",
+            "description": "Positive 1st\u2011order diffraction efficiency (color 1)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c2",
+            "type": "number",
+            "description": "Positive 1st\u2011order diffraction efficiency (color 2)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c3",
+            "type": "number",
+            "description": "Positive 1st\u2011order diffraction efficiency (color 3)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c4",
+            "type": "number",
+            "description": "Positive 1st\u2011order diffraction efficiency (color 4)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c5",
+            "type": "number",
+            "description": "Positive 1st\u2011order diffraction efficiency (color 5)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c6",
+            "type": "number",
+            "description": "Positive 1st\u2011order diffraction efficiency (color 6)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c1_std",
+            "type": "number",
+            "description": "Standard deviation of negative 1st\u2011order diffraction efficiency (color 1)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c2_std",
+            "type": "number",
+            "description": "Standard deviation of negative 1st\u2011order diffraction efficiency (color 2)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c3_std",
+            "type": "number",
+            "description": "Standard deviation of negative 1st\u2011order diffraction efficiency (color 3)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c4_std",
+            "type": "number",
+            "description": "Standard deviation of negative 1st\u2011order diffraction efficiency (color 4)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c5_std",
+            "type": "number",
+            "description": "Standard deviation of negative 1st\u2011order diffraction efficiency (color 5)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c6_std",
+            "type": "number",
+            "description": "Standard deviation of negative 1st\u2011order diffraction efficiency (color 6)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c1_std",
+            "type": "number",
+            "description": "Standard deviation of positive 1st\u2011order diffraction efficiency (color 1)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c2_std",
+            "type": "number",
+            "description": "Standard deviation of positive 1st\u2011order diffraction efficiency (color 2)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c3_std",
+            "type": "number",
+            "description": "Standard deviation of positive 1st\u2011order diffraction efficiency (color 3)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c4_std",
+            "type": "number",
+            "description": "Standard deviation of positive 1st\u2011order diffraction efficiency (color 4)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c5_std",
+            "type": "number",
+            "description": "Standard deviation of positive 1st\u2011order diffraction efficiency (color 5)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c6_std",
+            "type": "number",
+            "description": "Standard deviation of positive 1st\u2011order diffraction efficiency (color 6)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "l52p104_full",
+      "path": "L52P104_full.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": []
+      }
+    },
+    {
+      "name": "l55p110_full",
+      "path": "L55P110_full.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": []
+      }
+    },
+    {
+      "name": "l57p114_full",
+      "path": "L57P114_full.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": []
+      }
+    }
+  ]
+}
