@@ -1,6 +1,6 @@
-# METIS Taxonomy
+# METIS Semantics
 
-This repository is used in development of the METIS - Metrology Exchange to Innovate in Semiconductors taxonomy.  The data model for METIS
+This repository is used in development of the METIS - Metrology Exchange to Innovate in Semiconductors semantic assets.  The data model for METIS
 includes a rich array of domain metadata.   The taxonomy developed for METIS will be included in this repository for development and sharing.  The taxonomy is formalized in multiple representations to support METIS taxonomic tagging of products, to enhance discovery,  in addition to more standardized vocabulary format, [SKOS](https://www.w3.org/TR/skos-reference/).
 
 ## README.md
