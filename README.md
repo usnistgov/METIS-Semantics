@@ -23,6 +23,7 @@ This repository includes the following taxonomy
 ## Related Information
    - Public [CHIPS METIS website](https://metis.nist.gov )
    - [METIS Collection Landing Page](https://data.nist.gov/od/id/pdr0-0002)
+   - [CHIPS Metrology Program](https://www.nist.gov/chips/research-development-programs/metrology-program)
 
 # Semantic Principles
 
