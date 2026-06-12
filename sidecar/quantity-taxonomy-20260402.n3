@@ -1,0 +1,707 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <https://data.nist.gov/od/dm/metis-tabular-data/v0.1#> .
+
+<http://www.w3.org/2002/07/owl#Thing> rdf:type rdfs:Class .
+<http://www.w3.org/2002/07/owl#Thing> skos:prefLabel "Thing" .
+<http://www.w3.org/2002/07/owl#Thing> rdfs:comment "Represents entities in a taxonomy modelled as a Python class hierarchy" .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> skos:prefLabel "Physical Properties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> skos:definition "Physical Quantities and Constants encompass intrinsic properties of materials and fundamental physics parameters that characterize the behavior and state of physical systems." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> skos:prefLabel "Geometrical Properties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> skos:definition "Dimensional and Geometric Properties quantify spatial extent, shape, orientation, and periodic distances in physical systems and measurement configurations." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> skos:prefLabel "Response Parameters" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> skos:definition "Response Parameters describe how systems respond to energy inputs, change over time, or exhibit damping and relaxation behavior." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> skos:prefLabel "Signal Metrics" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> skos:definition "Electromagnetic and Network Metrics characterize electrical signal response, circuit behavior, and electromagnetic wave propagation." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> skos:prefLabel "Measurement Quality" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> skos:definition "Uncertainty, Error, and Quality Attributes quantify the doubt, variability, validation state, and provenance associated with measurements and data." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> skos:prefLabel "Experimental Metadata" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> skos:definition "Experimental Context and Metadata provide information about how, when, and where data was collected, including setup parameters, timing, and bibliographic references." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+# Terms in Physical Properties
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> skos:prefLabel "Magnetic Field Quantities" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> skos:definition "Magnetic Field Quantities represent vector or scalar fields that describe magnetic forces, interactions, and resonance phenomena in materials and devices." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> skos:prefLabel "Magnetic Material Properties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> skos:definition "Magnetic Material Properties characterize the intrinsic magnetic behavior of materials, including magnetization states, exchange interactions, and gyromagnetic responses." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> skos:prefLabel "Electromagnetic Response Properties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> skos:definition "Electromagnetic Response Properties quantify how materials and networks respond to electromagnetic signals, including permittivity, scattering parameters, and signal components." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> skos:prefLabel "Thermodynamic Quantities" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> skos:definition "Thermodynamic Quantities describe energy states, thermal properties, and enthalpy changes that govern the stability and phase behavior of systems." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> skos:prefLabel "Optical Properties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> skos:definition "Optical and Radiative Properties quantify light-matter interactions, diffraction phenomena, and electromagnetic radiation power and intensity." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PhysicalProperties> .
+
+## Magnetic Field Quantities
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyField> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyField> skos:prefLabel "Anisotropy Field" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyField> skos:definition "anisotropy field is a magnetic field that  \n* originates from the material’s magnetic anisotropy energy  \n* represents the effective field needed to overcome anisotropy and align magnetization along a hard direction  \n* is proportional to the anisotropy constant divided by the saturation magnetization  \n* is expressed in tesla (or oersted) and influences ferromagnetic resonance behavior" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AppliedMagneticField> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AppliedMagneticField> skos:prefLabel "Applied Magnetic Field" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AppliedMagneticField> skos:definition "applied magnetic field is a magnetic field that  \n* is generated by an external source to influence a material or device  \n* is oriented and controlled to achieve a specific magnitude and direction  \n* is spatially uniform or configured as required for the experiment or measurement." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AppliedMagneticField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveField> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveField> skos:prefLabel "Effective Field" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveField> skos:definition "effective field is a field that  \n* represents the net influence of all microscopic interactions on a given degree of freedom  \n* is derived by averaging or integrating out other degrees of freedom in a many‑body system  \n* replaces explicit many‑body interactions in equations of motion or Hamiltonians  \n* is spatially uniform or varies with position  \n* determines the dynamics of the subject through the same formalism as a physical field  \n* is used in mean‑field and coarse‑grained models to simplify complex interactions" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> skos:prefLabel "Magnetic Field" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> skos:definition "term\nmagnetic field    magnetic field is a physical field that  \n* r...\nmagnetic field    magnetic field is a physical field that  \n* e...\nName: definition, dtype: object" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffset> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffset> skos:prefLabel "Magnetic Field Offset" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffset> skos:definition "magnetic field offset is a magnetic field parameter that  \n* represents the constant deviation of a magnetic field sensor’s output from the true zero‑field condition  \n* is determined through calibration against a known reference field  \n* is expressed in units of magnetic flux density (e.g., tesla or gauss)  \n* is applied as a correction factor to raw sensor data to obtain accurate field measurements" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffset> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceField> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceField> skos:prefLabel "Resonance Field" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceField> skos:definition "resonance field is an electromagnetic field that  \n* oscillates at a specific resonant frequency defined by the geometry of a cavity or structure  \n* exhibits spatial mode patterns governed by the boundary conditions of the resonator  \n* stores electromagnetic energy with minimal loss during resonance  \n* interacts with material properties to enable precise metrological measurements in semiconductor and microelectronics contexts" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceField> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldQuantities> .
+
+## Magnetic Material Properties
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Exchange> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Exchange> skos:prefLabel "Exchange" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Exchange> skos:definition "exchange is a magnetic material property that  \n* quantifies the quantum mechanical interaction between neighboring magnetic moments in a material  \n* arises from electron spin-spin coupling and orbital overlap  \n* is expressed as an exchange energy or exchange constant (typically in units of joules or electron volts)  \n* determines whether magnetic moments align parallel (ferromagnetism) or antiparallel (antiferromagnetism)  \n* governs magnetic ordering, Curie temperature, and spin wave behavior" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Exchange> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactor> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactor> skos:prefLabel "G Factor" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactor> skos:definition "g factor is a dimensionless physical parameter that  \n* quantifies the proportionality between magnetic moment and angular momentum of a particle, atom, or defect  \n* is expressed as a unitless number  \n* varies with the specific particle, electronic state, or crystalline environment" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactor> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatio> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatio> skos:prefLabel "Gyromagnetic Ratio" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatio> skos:definition "gyromagnetic ratio is a physical constant that  \n* relates a particle’s magnetic dipole moment to its angular momentum  \n* is expressed in units of coulomb per kilogram (C·kg⁻¹) or rad·s⁻¹·T⁻¹  \n* serves as a fundamental parameter in techniques such as nuclear magnetic resonance and electron spin resonance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatio> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> skos:prefLabel "Magnetization" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> skos:definition "magnetization is a magnetic property that  \n* quantifies the magnetic dipole moment per unit volume of a material  \n* results from the alignment of atomic or molecular magnetic moments within the material  \n* is represented as a vector field indicating magnitude and direction  \n* is measured in amperes per meter (A·m⁻¹) in the SI system  \n* reflects the material’s response to an applied magnetic field." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Magnetization> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PerpendicularAnisotropy> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PerpendicularAnisotropy> skos:prefLabel "Perpendicular Anisotropy" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PerpendicularAnisotropy> skos:definition "perpendicular anisotropy is a magnetic anisotropy that  \n* aligns the easy axis of magnetization orthogonal to the substrate or film plane  \n* arises from interfacial, crystalline, or shape contributions in thin‑film ferromagnetic layers  \n* enhances out‑of‑plane magnetic stability for nanoscale elements  \n* enables high coercivity and low switching currents in spin‑torque devices" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PerpendicularAnisotropy> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SaturationMagnetization> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SaturationMagnetization> skos:prefLabel "Saturation Magnetization" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SaturationMagnetization> skos:definition "saturation magnetization is a magnetic property that  \n* represents the maximum magnetic moment per unit volume (or mass) a material can attain under an external magnetic field  \n* occurs when all magnetic dipoles within the material are fully aligned with the field  \n* is measured in amperes per meter (A·m⁻¹) or equivalent units such as emu · cm⁻³  \n* remains unchanged despite further increases in applied magnetic field strength" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SaturationMagnetization> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticMaterialProperties> .
+
+## Electromagnetic Response Properties
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectivePermittivity> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectivePermittivity> skos:prefLabel "Effective Permittivity" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectivePermittivity> skos:definition "effective permittivity is a material property that  \n&nbsp;&nbsp;* represents the averaged dielectric response of a heterogeneous medium to an applied electric field  \n&nbsp;&nbsp;* quantifies the combined influence of constituent permittivities and their spatial distribution  \n&nbsp;&nbsp;* is used in modeling wave propagation and capacitance in composite or structured materials" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectivePermittivity> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21> skos:prefLabel "Imaginary Part Of S21" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21> skos:definition "Imaginary part of S21 is a complex scattering‑parameter component that  \n* corresponds to the coefficient of the imaginary unit in the complex representation of S21  \n* quantifies the reactive (phase‑related) contribution to the forward transmission coefficient  \n* is dimensionless and expressed as a pure number without units" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21> skos:prefLabel "Real Part Of S21" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21> skos:definition "real part of s21 is a numeric attribute of a scattering parameter that  \n* represents the real component of the complex transmission coefficient S21 in a two‑port network  \n* quantifies the in‑phase amplitude of the signal transferred from port 1 to port 2  \n* is expressed as a dimensionless ratio (or converted to dB) without imaginary contribution  \n* is obtained from measured or simulated S‑parameter data" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScatteringParameter> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScatteringParameter> skos:prefLabel "Scattering Parameter" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScatteringParameter> skos:definition "scattering parameter is a network parameter that  \n* relates incident and reflected microwave signal wave amplitudes at each port of a linear, time‑invariant electrical network  \n* is expressed as a complex‑valued matrix S whose elements are ratios of reflected to incident wave amplitudes  \n* assumes a defined reference impedance for all ports  \n* is measured with a vector network analyzer under small‑signal conditions" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScatteringParameter> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ElectromagneticResponseProperties> .
+
+## Thermodynamic Quantities
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0> skos:prefLabel "Delta H0" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0> skos:definition "delta h₀ is a metrology parameter that  \n* quantifies the deviation of measured film thickness from the nominal zero‑reference baseline  \n* is expressed in units of length such as nanometers or angstroms  \n* is calculated from calibration measurements using reference standards  \n* reflects systematic offset in thickness measurement equipment" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZero> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZero> skos:prefLabel "Delta H Zero" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZero> skos:definition "Delta H⁰ is a standard thermodynamic quantity that  \n* represents the enthalpy change of a chemical or physical process measured under defined standard conditions (1 bar pressure, specified temperature, pure substances in their reference states)  \n* is expressed in units of energy per amount of substance (e.g., kJ·mol⁻¹)  \n* is obtained from heat exchange at constant pressure while the system and surroundings remain in equilibrium." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZero> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EnergyBarrier> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EnergyBarrier> skos:prefLabel "Energy Barrier" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EnergyBarrier> skos:definition "energy barrier is a potential energy feature that  \n* appears as a local maximum on a potential energy surface  \n* separates two adjacent minima representing distinct stable configurations  \n* quantifies the minimum energy required to convert one configuration into the other  \n* is measured in units of energy such as electronvolts or joules  \n* originates from interatomic or intermolecular interactions that oppose the transition" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EnergyBarrier> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Temperature> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Temperature> skos:prefLabel "Temperature" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Temperature> skos:definition "temperature is a physical quantity that  \n* quantifies the average kinetic energy of particles in a system  \n* determines the direction of spontaneous heat transfer between systems  \n* is measured in units such as kelvin, Celsius, or Fahrenheit  \n* varies continuously with changes in energy content" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Temperature> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermalStability> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermalStability> skos:prefLabel "Thermal Stability" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermalStability> skos:definition "thermal stability is a material property that  \n* describes the ability of a material to retain its physical and chemical characteristics when exposed to elevated temperatures  \n* resists degradation, phase change, or loss of functionality under thermal stress  \n* maintains dimensional integrity and performance within a specified temperature range" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ThermalStability> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ThermodynamicQuantities> .
+
+## Optical Properties
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPower> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPower> skos:prefLabel "Beam Power" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPower> skos:definition "beam power is a physical quantity that  \n* quantifies the rate of energy transport carried by a beam of particles or electromagnetic radiation  \n* is expressed in units of watts (J·s⁻¹)  \n* equals the product of beam intensity (energy per unit area per unit time) and the beam’s cross‑sectional area  \n* serves as a key performance metric for lasers, particle accelerators, and other beam‑based instruments" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPower> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency> skos:prefLabel "Diffraction Efficiency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency> skos:definition "diffraction efficiency is an optical performance metric that  \n&nbsp;&nbsp;* quantifies the fraction of incident optical power diffracted into a specified diffraction order  \n&nbsp;&nbsp;* is expressed as a dimensionless ratio or percentage  \n&nbsp;&nbsp;* is determined under defined wavelength, polarization, and incident‑angle conditions" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FinalPower> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FinalPower> skos:prefLabel "Final Power" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FinalPower> skos:definition "final power is a power measurement that  \n    * represents the ultimate output power of a device under test after completion of the test sequence  \n    * is recorded in units of watts with traceable calibration  \n    * corresponds to the specified test condition set (e.g., voltage, temperature, load)  \n    * is stored as a numeric value in the metrology data repository" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FinalPower> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> skos:prefLabel "First Order Diffraction Efficiency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> skos:definition "first order diffraction efficiency is a diffraction efficiency metric that  \n* quantifies the proportion of incident optical power diffracted into the first diffraction order of a grating  \n* is expressed as a dimensionless ratio or percentage of the incident power  \n* is measured under specified illumination wavelength, polarization, and incident angle conditions  \n* depends on the grating’s groove profile, material refractive index, and thickness" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#FirstOrderDiffractionEfficiency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Intensity> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Intensity> skos:prefLabel "Intensity" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Intensity> skos:definition "Intensity is a physical quantity that  \n  * quantifies the magnitude of a phenomenon per unit area or per unit time  \n  * is expressed in standardized units such as watts per square meter or decibels  \n  * represents the strength or power of a signal, field, or radiation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Intensity> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#OpticalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> skos:prefLabel "Harmonic Number" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> skos:definition "harmonic number is an experimental parameter that  \n* identifies the order of a harmonic in diffraction, frequency generation, or nonlinear optical measurements  \n* is expressed as a positive integer (1st harmonic, 2nd harmonic, 3rd harmonic, etc.)  \n* specifies which diffraction order or harmonic mode is being measured or analyzed  \n* is recorded as part of the experimental configuration" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfFrames> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfFrames> skos:prefLabel "Number Of Frames" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfFrames> skos:definition "number of frames is a quantitative metric that  \n    * represents the count of discrete image frames acquired during a metrology operation  \n    * is expressed as an integer value  \n    * informs assessment of data volume and temporal resolution" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfFrames> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> skos:prefLabel "Patterned" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> skos:definition "patterned is a visual attribute that  \n* exhibits a repeated motif or arrangement  \n* displays regular or systematic variation in form, color, or texture  \n* conveys recognizable order or structure" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Patterned> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StageRotation> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StageRotation> skos:prefLabel "Stage Rotation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StageRotation> skos:definition "stage rotation is a positioning operation that  \n* rotates a substrate or sample about a specified axis  \n* provides precise angular displacement measured in degrees or radians  \n* is driven by high‑resolution actuators such as piezoelectric or stepper motors  \n* maintains alignment of the sample with the measurement probe or optical system  \n* is integrated into the coordinate system of a metrology instrument" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StageRotation> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> .
+
+# Terms in Geometrical Properties
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements> skos:prefLabel "Angular Measurements" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements> skos:definition "Angular Measurements quantify rotational displacement, orientation, and angular position of objects, instruments, and measurement configurations, expressed in degrees or radians." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> skos:prefLabel "Linear Dimensions" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> skos:definition "Linear Dimensions and Extents quantify the physical size, width, length, and spatial extent of features, structures, and components in one or more directions." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> skos:prefLabel "Periodic Parameters" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> skos:definition "Periodic Structures and Wavelengths characterize repeating spatial patterns, periodic distances, wave properties, and the geometric configuration of periodic systems." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SpectralLineCharacteristics> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SpectralLineCharacteristics> skos:prefLabel "Spectral Line Characteristics" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SpectralLineCharacteristics> skos:definition "Spectral Line Characteristics quantify the width, broadening, and shape of spectral features arising from wavelength or frequency distributions in optical and resonance measurements." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SpectralLineCharacteristics> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#GeometricalProperties> .
+
+## Angular Measurements
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> skos:prefLabel "Angle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> skos:definition "Angle is a geometric entity that  \n* consists of two rays sharing a common endpoint (the vertex)  \n* is defined by the amount of rotation required to superimpose one ray onto the other  \n* is measured in units such as degrees, radians, or gradians  \n* quantifies planar separation between intersecting lines" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraAngle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraAngle> skos:prefLabel "Camera Angle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraAngle> skos:definition "camera angle is a photographic parameter that  \n* specifies the orientation of the camera sensor relative to the subject’s spatial position  \n* determines the perspective by altering the apparent depth and scale of objects  \n* influences narrative tone through high, low, or eye‑level positioning  \n* establishes the viewer’s line of sight toward the subject" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraRotationAngle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraRotationAngle> skos:prefLabel "Camera Rotation Angle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraRotationAngle> skos:definition "camera rotation angle is an angular measurement that  \n* quantifies the rotational displacement of a camera around a specified axis  \n* is expressed in degrees or radians  \n* defines the camera’s orientation relative to a reference coordinate system  \n* is used to transform captured image coordinates into world coordinates" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#CameraRotationAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> skos:prefLabel "Grazing Angle Of Incidence" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> skos:definition "grazing angle of incidence is an angle of incidence that  \n* is measured between the incoming radiation (or particle) direction and the surface plane  \n* has a value close to zero degrees, i.e., the beam travels nearly parallel to the surface  \n* is defined as the complement to the angle measured from the surface normal  \n* is employed in techniques such as X‑ray reflectivity and surface scattering to enhance surface sensitivity" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfAngles> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfAngles> skos:prefLabel "Number Of Angles" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfAngles> skos:definition "number of angles is a geometric property that  \n* quantifies the count of interior angles in a shape or polygon  \n* is expressed as an integer representing the total angles present" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfAngles> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamAngles> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamAngles> skos:prefLabel "Number Of Beam Angles" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamAngles> skos:definition "number of beam angles is a metrology metric that  \n* quantifies the count of distinct angular orientations a measurement beam assumes during data acquisition  \n* is expressed as an integer value  \n* influences the angular sampling resolution of the measurement system  \n* is recorded as part of the experimental configuration metadata" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamAngles> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> skos:prefLabel "Rotation Angle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> skos:definition "rotation angle is an angle that  \n * quantifies the angular displacement between an initial and a final orientation about a fixed axis  \n * is expressed in units such as degrees or radians  \n * is measured as the magnitude of rotation irrespective of the path taken" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> skos:prefLabel "Rotation Angle In A Diffraction Measurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> skos:definition "rotation angle in a diffraction measurement is a measurement parameter that  \n  * defines the angular displacement of the sample or detector relative to the incident beam during a diffraction experiment  \n  * is expressed in units of degrees or radians  \n  * determines the position of diffraction peaks in the resulting intensity profile  \n  * is varied systematically to acquire intensity‑versus‑angle data" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngleInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> skos:prefLabel "Sample Rotation Angle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> skos:definition "sample rotation angle is a geometric parameter that  \n* quantifies the angular displacement of a sample relative to a defined reference orientation  \n* is expressed in units of degrees or radians  \n* determines the orientation of the sample surface with respect to an incident probe or measurement axis  \n* influences the interaction between the sample and measurement instrumentation (e.g., beam incidence, detector response)  \n* is set and recorded as part of a metrology experiment configuration." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SampleRotationAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#RotationAngle> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanAngle> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanAngle> skos:prefLabel "Scan Angle" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanAngle> skos:definition "scan angle is a measurement parameter that  \n* specifies the angular range over which a scanning probe, beam, or sensor is swept across a sample  \n* is expressed in degrees or radians  \n* determines the spatial coverage and resolution of the scanned area  \n* is set or recorded as part of the metrology configuration" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanAngle> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#Angle> .
+
+## Linear Dimensions
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> skos:prefLabel "Dimensional" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> skos:definition "dimensional is a measurement attribute that  \n* quantifies the number of independent spatial directions of an object or system  \n* expresses size, extent, or scale along one or more axes  \n* is represented by units such as length, area, volume, or higher‑dimensional analogues  \n* influences analysis, modeling, and visualization in metrology and semiconductor engineering" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dimensional> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> skos:prefLabel "Dimensional Properties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> skos:definition "dimensional properties is a property that  \n&nbsp;&nbsp;* quantify the size or extent of an object in one or more spatial dimensions  \n&nbsp;&nbsp;* are expressed as numeric values with associated measurement units  \n&nbsp;&nbsp;* derive from geometric relationships such as length, area, volume, or angle  \n&nbsp;&nbsp;* remain invariant under changes in material composition while varying with scale" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DimensionalProperties> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidth> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidth> skos:prefLabel "Line Width" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidth> skos:definition "line width is a dimensional parameter that  \n* denotes the lateral dimension of a patterned line feature on a semiconductor substrate  \n* is measured perpendicular to the line's longitudinal axis  \n* is expressed in nanometers or micrometers  \n* serves as a critical dimension influencing device performance  \n* is obtained using metrology techniques such as CD‑SEM, scatterometry, or optical critical‑dimension inspection" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidth> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> skos:prefLabel "Waveguide Length" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> skos:definition "waveguide length is a geometric dimension of a waveguide that  \n* extends along the direction of signal propagation  \n* is measured in linear units such as meters or millimeters  \n* determines the electrical phase shift experienced by a wave traveling through the guide  \n* is defined for a contiguous segment of the waveguide without discontinuities  \n* influences insertion loss and group delay in a predictable manner" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideLength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> skos:prefLabel "Waveguide Width" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> skos:definition "waveguide width is a geometric dimension of a waveguide that  \n* specifies the transverse physical extent of the waveguide cross‑section  \n* determines the cutoff frequency for modes propagating in the waveguide  \n* is measured in micrometres or millimetres" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideWidth> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#LinearDimensions> .
+
+## Periodic Parameters
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Pitch> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Pitch> skos:prefLabel "Pitch" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Pitch> skos:definition "pitch is a geometric parameter that  \n* quantifies the distance between adjacent repeating features in a periodic structure  \n* is measured perpendicular to the line or edge of the repeating elements  \n* is expressed in length units such as nanometers, micrometers, or millimeters  \n* characterizes gratings, line arrays, and patterned structures in semiconductor and optical devices" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Pitch> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> skos:prefLabel "Pitch In A Diffraction Measurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> skos:definition "pitch in a diffraction measurement is a metrological parameter that  \n* quantifies the distance between successive repeating units of a periodic structure  \n* is derived from the angular positions of diffraction orders using the grating equation  \n* is expressed in length units such as nanometers or micrometers  \n* provides a direct measure of feature size for semiconductor and microelectronics components" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#PitchInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#Pitch> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> skos:prefLabel "Waveguide Geometry" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> skos:definition "waveguide geometry is a geometric configuration of a waveguide that  \n* defines the cross‑sectional shape and dimensions of the guiding structure  \n* establishes the spatial distribution of material boundaries and dielectric properties  \n* determines the supported electromagnetic modes and cutoff frequencies  \n* influences propagation loss, dispersion, and confinement characteristics  \n* includes bends, tapers, or periodic features that modify mode evolution" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WaveguideGeometry> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> skos:prefLabel "Wavelength" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> skos:definition "wavelength is a wave property that  \n* represents the spatial period of a periodic wave  \n* equals the distance between consecutive points of identical phase (e.g., crest to crest)  \n* is measured in units of length such as meters or nanometers  \n* is mathematically related to frequency by the equation λ = v / f, where v is the wave speed  \n* remains constant for a given wave frequency in a homogeneous medium" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Wavelength> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#PeriodicParameters> .
+
+## Spectral Line Characteristics
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadening> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadening> skos:prefLabel "Inhomogeneous Linewidth Broadening" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadening> skos:definition "inhomogeneous linewidth broadening is a spectral line broadening phenomenon that  \n* originates from static variations in local environments of emitters within an ensemble  \n* produces a distribution of transition frequencies across the population  \n* yields a composite line shape reflecting the sum of individual narrow lines  \n* is independent of the intrinsic decoherence time of individual emitters  \n* is observed in materials with spatially varying strain, composition, or electric/magnetic fields" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadening> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SpectralLineCharacteristics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> skos:prefLabel "Linewidth In A Diffraction Measurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> skos:definition "line width in a diffraction measurement is a measurement parameter that  \n* quantifies the full width at half maximum (FWHM) of a diffraction peak  \n* reflects the spread of diffracted intensity in reciprocal space  \n* is derived from the angular or reciprocal‑space profile of the diffracted beam  \n* correlates with crystallite size, lattice strain, and instrumental broadening" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LineWidthInADiffractionMeasurement> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#Linewidth> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Linewidth> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Linewidth> skos:prefLabel "Linewidth" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Linewidth> skos:definition "linewidth is a spectral property that  \n* quantifies the range of wavelengths (or frequencies) over which a spectral line maintains significant intensity  \n* is expressed as a width measurement such as full width at half maximum (FWHM)  \n* reflects broadening mechanisms including natural lifetime, Doppler, pressure, and instrumental effects  \n* influences resolution and discrimination capability in spectroscopic analysis" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Linewidth> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SpectralLineCharacteristics> .
+
+# Terms in Response Parameters
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AttemptFrequency> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AttemptFrequency> skos:prefLabel "Attempt Frequency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AttemptFrequency> skos:definition "attempt frequency is a rate parameter that  \n* quantifies the number of vibrational attempts per unit time to overcome an energy barrier  \n* appears as the pre‑exponential factor in Arrhenius‑type expressions for transition rates  \n* has units of frequency (s⁻¹)  \n* is determined by the vibrational modes of the system at the transition state" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AttemptFrequency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstant> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstant> skos:prefLabel "Damping Constant" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstant> skos:definition "damping constant is a system parameter that  \n* quantifies the proportional relationship between damping force and velocity in a damped system  \n* possesses units of force·time per length (e.g., N·s/m) or mass per time  \n* remains constant for a given linear viscous damping model" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstant> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactor> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactor> skos:prefLabel "Damping Factor" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactor> skos:definition "damping factor is a dimensionless parameter that  \n&nbsp;&nbsp;* quantifies the rate at which oscillations in a dynamic system decrease over time  \n&nbsp;&nbsp;* is defined as the ratio of actual damping to critical damping in a second‑order system  \n&nbsp;&nbsp;* determines whether a system is under‑damped, critically damped, or over‑damped" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactor> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameter> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameter> skos:prefLabel "Damping Parameter" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameter> skos:definition "damping parameter is a model parameter that  \n* quantifies the rate at which oscillatory energy is dissipated in a dynamic system  \n* is expressed as a scalar (or dimensionless) value representing viscous or structural damping  \n* appears in equations of motion to modify the system’s natural frequency and decay rate  \n* is derived from material properties, geometry, and operating conditions  \n* influences the amplitude attenuation of transient and steady‑state responses" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameter> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> skos:prefLabel "Frequency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> skos:definition "frequency is a physical quantity that  \n* quantifies the number of occurrences of a repeating event per unit time  \n* is expressed in units of hertz (Hz), representing cycles per second  \n* characterizes oscillations, vibrations, electromagnetic waves, and periodic signals  \n* is related to wavelength by the equation f = c / λ for electromagnetic radiation  \n* determines the energy of photons via E = h·f in quantum mechanics" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDamping> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDamping> skos:prefLabel "Gilbert Damping" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDamping> skos:definition "Gilbert damping is a phenomenological damping parameter in magnetization dynamics that  \n* quantifies the rate at which the precessional motion of magnetization loses energy  \n* appears as a dimensionless coefficient (α) in the Landau‑Lifshitz‑Gilbert equation  \n* acts as a torque opposing the magnetization vector  \n* originates from spin‑orbit coupling and other relaxation mechanisms  \n* influences ferromagnetic resonance linewidth and magnetic switching speed" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDamping> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameter> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameter> skos:prefLabel "Gilbert Damping Parameter" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameter> skos:definition "Gilbert damping parameter is a material parameter that  \n* quantifies the rate at which the precessional motion of magnetization dissipates energy into the lattice  \n* appears as the dimensionless coefficient α in the Landau‑Lifshitz‑Gilbert equation  \n* is intrinsic to ferromagnetic materials and influences the linewidth of ferromagnetic resonance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameter> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticRelaxationRate> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticRelaxationRate> skos:prefLabel "Magnetic Relaxation Rate" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticRelaxationRate> skos:definition "magnetic relaxation rate is a relaxation rate that  \n* quantifies the exponential decay of magnetization toward equilibrium after perturbation  \n* is expressed in reciprocal time units (e.g., s⁻¹)  \n* depends on interactions such as spin–lattice or spin–spin coupling  \n* is measured using techniques like nuclear magnetic resonance or electron spin resonance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticRelaxationRate> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ResponseParameters> .
+
+# Terms in Signal Metrics
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance> skos:prefLabel "Impedance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance> skos:definition "impedance is a electrical property that  \n    * relates voltage and current in alternating‑current (AC) circuits through magnitude and phase  \n    * is expressed as a complex quantity composed of resistance (real part) and reactance (imaginary part)  \n    * has units of ohms (Ω)  \n    * varies with signal frequency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance> skos:prefLabel "Real Impedance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance> skos:definition "real impedance is a component of impedance that  \n* represents the resistive part of the complex impedance  \n* has a magnitude expressed in ohms without an associated phase angle  \n* corresponds to power dissipation as heat in a circuit element" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReferenceImpedance> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReferenceImpedance> skos:prefLabel "Reference Impedance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReferenceImpedance> skos:definition "reference impedance is a impedance standard that  \n* defines the nominal value against which circuit impedances are compared  \n* is expressed in ohms  \n* normalizes S‑parameter measurements for network analyzers  \n* matches the characteristic impedance of the associated transmission medium  \n* remains fixed for a given measurement configuration" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReferenceImpedance> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> skos:prefLabel "Reflection Coefficient" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> skos:definition "reflection coefficient is a coefficient that  \n* quantifies the ratio of the reflected wave amplitude to the incident wave amplitude at an interface  \n* is expressed as a complex number representing both magnitude and phase  \n* has a magnitude whose square equals the reflected power ratio  \n* depends on the impedance mismatch between adjoining media" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ReflectionCoefficient> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Resistance> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Resistance> skos:prefLabel "Resistance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Resistance> skos:definition "resistance is an electrical property that\n    * quantifies opposition to the flow of electric charge in a conductor  \n    * is measured in ohms (Ω)  \n    * is proportional to the conductor’s length and material resistivity  \n    * is inversely proportional to the conductor’s cross‑sectional area  \n    * follows Ohm’s law linking voltage, current, and resistance (V = I·R)" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Resistance> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter> skos:prefLabel "S Parameter" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter> skos:definition "s‑parameter is a network parameter that  \n* relates incident and reflected microwave waves at the ports of a linear electrical network  \n* is expressed as a complex, frequency‑dependent matrix of scattering coefficients  \n* is measured under linear, time‑invariant, small‑signal conditions  \n* characterizes transmission and reflection behavior of high‑frequency components" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> skos:prefLabel "Transmission Coefficient" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> skos:definition "Transmission coefficient is a physical quantity that  \n* expresses the ratio of transmitted wave amplitude (or power) to incident wave amplitude (or power) across a boundary  \n* is dimensionless  \n* is derived from the continuity conditions of the wave field at the interface  \n* depends on frequency, material properties, and angle of incidence" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TransmissionCoefficient> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Bandwidth> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Bandwidth> skos:prefLabel "Bandwidth" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Bandwidth> skos:definition "bandwidth is a communication parameter that\n    * quantifies the maximum rate of data transfer across a transmission medium  \n    * is expressed in bits per second (bps) or hertz (Hz)  \n    * determines the capacity for simultaneous data streams  \n    * is constrained by physical media characteristics and signaling protocols" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Bandwidth> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#SignalMetrics> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> skos:prefLabel "Measurement Uncertainties" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> skos:definition "Measurement Uncertainties quantify the lack of exact knowledge about the true value of a measured quantity, expressed as statistical intervals, standard deviations, or confidence bounds." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> skos:prefLabel "Statistical Dispersions" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> skos:definition "Statistical Dispersions quantify the variability or spread of measurement values around a central tendency, typically expressed as standard deviations or variance." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> skos:prefLabel "Measurement Errors" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> skos:definition "Measurement Errors represent the deviation between a measured value and its true or reference value, arising from systematic or random sources." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> skos:prefLabel "Value Attributes" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> skos:definition "Quality and Provenance Attributes describe the validation state, origin, and qualitative characteristics that establish the trustworthiness and context of measurement data." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQuality> .
+
+## Measurement Uncertainties
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyFieldUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyFieldUncertainty> skos:prefLabel "Anisotropy Field Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyFieldUncertainty> skos:definition "anisotropy field uncertainty is a measurement uncertainty that  \n* pertains to the magnetic anisotropy field parameter of a material  \n* originates from limitations of the measurement instrumentation and calibration procedures  \n* reflects variability introduced by sample heterogeneity and environmental conditions  \n* is expressed using statistical metrics such as standard deviation, confidence interval, or expanded uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#AnisotropyFieldUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstantUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstantUncertainty> skos:prefLabel "Damping Constant Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstantUncertainty> skos:definition "damping constant uncertainty is a measurement uncertainty that  \n&nbsp;&nbsp;* pertains to the damping constant parameter of a dynamic system  \n&nbsp;&nbsp;* is expressed as a statistical interval, standard deviation, or confidence bound  \n&nbsp;&nbsp;* originates from limitations in measurement instrumentation, calibration, or data analysis  \n&nbsp;&nbsp;* contributes to the overall uncertainty budget in model predictions or performance assessments" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingConstantUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactorUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactorUncertainty> skos:prefLabel "Damping Factor Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactorUncertainty> skos:definition "damping factor uncertainty is a measurement uncertainty that  \n    * quantifies the deviation between the true damping factor of a system and its reported value  \n    * arises from limitations of measurement instruments, environmental variations, and data analysis methods  \n    * is expressed as a statistical interval or confidence level  \n    * affects the reliability of dynamic response predictions" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingFactorUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameterUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameterUncertainty> skos:prefLabel "Damping Parameter Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameterUncertainty> skos:definition "damping parameter uncertainty is a parameter uncertainty that  \n* quantifies the lack of exact knowledge about the numerical value of a damping coefficient used in device or process models  \n* arises from variations in material properties, fabrication tolerances, and measurement noise  \n* is expressed using statistical descriptors such as standard deviation, confidence interval, or probability distribution  \n* impacts the reliability of simulation outcomes and prediction of device performance" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DampingParameterUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0Uncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0Uncertainty> skos:prefLabel "Delta H 0 Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0Uncertainty> skos:definition "delta h0 uncertainty is a measurement uncertainty that  \n* quantifies the dispersion of repeated δh₀ values obtained under identical conditions  \n* derives from instrument noise, calibration error, and environmental variability affecting δh₀ measurements  \n* is expressed using statistical metrics such as standard deviation, variance, or confidence interval" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaH0Uncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZeroUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZeroUncertainty> skos:prefLabel "Delta H Zero Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZeroUncertainty> skos:definition "Delta H° uncertainty is a measurement uncertainty that  \n* quantifies the possible deviation between the reported standard enthalpy change (ΔH°) and its true value  \n* is expressed as a numeric value with units of energy per amount of substance (e.g., kJ·mol⁻¹)  \n* results from propagation of uncertainties in experimental data and reference standards  \n* accompanies ΔH° values in thermochemical databases and literature." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DeltaHZeroUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveMagnetizationUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveMagnetizationUncertainty> skos:prefLabel "Effective Magnetization Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveMagnetizationUncertainty> skos:definition "effective magnetization uncertainty is a measurement uncertainty that  \n&nbsp;&nbsp;* quantifies the estimated deviation between the reported effective magnetization value and the true value  \n&nbsp;&nbsp;* is expressed as a statistical confidence interval or standard deviation  \n&nbsp;&nbsp;* incorporates contributions from instrument calibration, sample geometry, temperature stability, and data analysis procedures  \n&nbsp;&nbsp;* is derived using uncertainty propagation methods applied to the measurement model for effective magnetization" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#EffectiveMagnetizationUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactorUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactorUncertainty> skos:prefLabel "G Factor Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactorUncertainty> skos:definition "g factor uncertainty is a measurement uncertainty that  \n* quantifies the doubt associated with the determined value of the Landé g‑factor for a semiconductor or microelectronic device  \n* is expressed as a statistical interval (e.g., standard deviation or expanded uncertainty) in the same units as the g‑factor  \n* derives from contributions such as instrument precision, calibration error, and repeatability of the measurement  \n* is reported together with the confidence level or coverage factor used in its evaluation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GFactorUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameterUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameterUncertainty> skos:prefLabel "Gilbert Damping Parameter Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameterUncertainty> skos:definition "Gilbert damping parameter uncertainty is a parameter uncertainty that  \n   * pertains to the Gilbert damping constant, a material‑specific coefficient describing energy dissipation in magnetization dynamics  \n   * expresses the quantitative range or statistical distribution associated with the measured or modeled value  \n   * originates from experimental measurement error, instrument calibration limits, and model fitting procedures  \n   * is reported using standard uncertainty metrics such as standard deviation, confidence interval, or covariance matrix" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingParameterUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingUncertainty> skos:prefLabel "Gilbert Damping Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingUncertainty> skos:definition "gilbert damping uncertainty is a parameter uncertainty that\n    * quantifies the statistical variation in the measured value of the Gilbert damping coefficient (α) used in the Landau‑Lifshitz‑Gilbert equation\n    * originates from experimental noise, fitting residuals, and model assumptions in ferromagnetic resonance or time‑domain magnetization measurements\n    * is expressed as a confidence interval, standard deviation, or error bar associated with the reported α value\n    * impacts the predictive accuracy of micromagnetic simulations and device performance assessments" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GilbertDampingUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatioUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatioUncertainty> skos:prefLabel "Gyromagnetic Ratio Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatioUncertainty> skos:definition "gyromagnetic ratio uncertainty is a measurement uncertainty that  \n  * pertains to the gyromagnetic ratio, a physical constant linking magnetic moment and angular momentum  \n  * expresses the quantitative estimate of doubt about the reported value  \n  * is derived from statistical analysis of repeated measurements and assessment of systematic influences  \n  * is reported using standard uncertainty notation such as standard deviation or confidence interval" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#GyromagneticRatioUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadeningUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadeningUncertainty> skos:prefLabel "Inhomogeneous Linewidth Broadening Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadeningUncertainty> skos:definition "inhomogeneous linewidth broadening uncertainty is a measurement uncertainty that  \n   * arises from spatial variations in material properties that cause non‑uniform spectral line widths  \n   * is quantified as the statistical dispersion of linewidth values across a sample population  \n   * is expressed as a confidence interval or standard deviation associated with the measured linewidth  \n   * is distinguished from homogeneous broadening uncertainty which originates from intrinsic processes" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#InhomogeneousLinewidthBroadeningUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthUncertainty> skos:prefLabel "Linewidth Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthUncertainty> skos:definition "linewidth uncertainty is a measurement uncertainty that  \n* pertains to the estimated range of values for the measured spectral linewidth  \n* is expressed as a standard deviation or confidence interval  \n* derives from instrument resolution, noise, and fitting algorithm contributions  \n* is combined with other uncertainty components according to metrology guidelines  \n* is reported alongside the measured linewidth value" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffsetUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffsetUncertainty> skos:prefLabel "Magnetic Field Offset Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffsetUncertainty> skos:definition "magnetic field offset uncertainty is an uncertainty component that  \n* represents the statistical dispersion of repeated offset measurements  \n* originates from sensor calibration error, drift, and environmental magnetic interference  \n* is expressed as a standard deviation or confidence interval around the estimated offset value  \n* contributes to the total uncertainty budget of magnetic field measurements" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticFieldOffsetUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldUncertainty> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldUncertainty> skos:prefLabel "Resonance Field Uncertainty" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldUncertainty> skos:definition "Resonance field uncertainty is a measurement uncertainty that  \n* quantifies the doubt associated with the measured or inferred value of a resonance field  \n* is expressed as a standard uncertainty or confidence interval derived from statistical analysis of measurement data  \n* incorporates contributions from instrument calibration, environmental influences, and model assumptions  \n* is reported in units consistent with the resonance field (e.g., tesla, gauss, hertz)  \n* follows established metrological guidelines such as the Guide to the Expression of Uncertainty in Measurement (GUM)" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldUncertainty> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementUncertainties> .
+
+## Statistical Dispersions
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPowerStandardDeviation> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPowerStandardDeviation> skos:prefLabel "Beam Power Standard Deviation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPowerStandardDeviation> skos:definition "beam power standard deviation is a statistical metric that  \n* quantifies the dispersion of measured beam power values around their mean  \n* is calculated as the square root of the variance of a set of beam power measurements  \n* has the same units as beam power (e.g., watts)  \n* is derived from repeated power measurements performed under consistent experimental conditions  \n* provides an indication of beam output stability and repeatability" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamPowerStandardDeviation> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation> skos:prefLabel "Diffraction Efficiency Standard Deviation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation> skos:definition "diffraction efficiency standard deviation is a statistical measure that  \n* quantifies the variability of measured diffraction efficiency values across repeated experiments  \n* equals the square root of the variance of diffraction efficiency values  \n* is expressed in the same units as diffraction efficiency (e.g., percentage points)  \n* is calculated from a sample set obtained under consistent measurement conditions." .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IntensityStandardDeviation> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IntensityStandardDeviation> skos:prefLabel "Intensity Standard Deviation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IntensityStandardDeviation> skos:definition "intensity standard deviation is a statistical measure that  \n* quantifies the dispersion of intensity values around their mean  \n* is computed as the square root of the variance of the intensity data  \n* is expressed in the same units as the original intensity measurements  \n* provides an indicator of consistency or repeatability in metrology results" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#IntensityStandardDeviation> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions> .
+
+## Measurement Errors
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthError> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthError> skos:prefLabel "Linewidth Error" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthError> skos:definition "linewidth error is a measurement error that  \n* quantifies the deviation between the intended or nominal line width of a patterned feature and the actual measured line width  \n* originates from instrument resolution limits, process variations, and data‑analysis algorithms  \n* is expressed in nanometers or as a percentage of the target dimension  \n* influences device performance by altering electrical characteristics" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#LinewidthError> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldError> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldError> skos:prefLabel "Resonance Field Error" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldError> skos:definition "resonance field error is a measurement error that  \n    * originates from unintended coupling between resonant electromagnetic fields and the device under test  \n    * produces systematic deviation in measured electrical or physical parameters  \n    * depends on the frequency, geometry, and material properties of the measurement setup  \n    * is quantifiable through reference standards and calibration procedures  \n    * manifests as a shift in resonant frequency, amplitude, or phase response" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ResonanceFieldError> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WriteErrorRate> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WriteErrorRate> skos:prefLabel "Write Error Rate" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WriteErrorRate> skos:definition "write error rate is a reliability metric that  \n* quantifies the frequency of incorrect data written to a memory cell during write operations  \n* is expressed as the number of write errors per total write attempts  \n* is measured under specified test conditions and operating parameters  \n* is used to assess memory device endurance and data integrity" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#WriteErrorRate> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementErrors> .
+
+## Value Attributes
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> skos:prefLabel "Average" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> skos:definition "average is a statistical measure that  \n * aggregates a set of numerical values  \n * is calculated by dividing the sum of the values by the count of values  \n * represents the central tendency of the data set  \n * is affected by each value in the data set  \n * includes variants such as arithmetic, geometric, and harmonic" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Average> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> skos:prefLabel "Calibrated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> skos:definition "calibrated is a instrument condition that  \n  * has been adjusted to align its output with known reference standards  \n  * exhibits documented traceability to national or international standards  \n  * has undergone verification procedures establishing accuracy within specified tolerances  \n  * includes recorded calibration data and associated uncertainty estimates" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Calibrated> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> skos:prefLabel "Dependent" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> skos:definition "dependent is a relationship role that\n    * relies on another entity for support\n    * has its state determined by another entity\n    * lacks autonomy\n    * is contingent upon another" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> skos:prefLabel "Effective" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> skos:definition "effective is a property that  \n * achieves intended outcomes  \n * produces measurable results  \n * operates with efficiency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Effective> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> skos:prefLabel "Independent" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> skos:definition "independent is an attribute that  \n* does not rely on external control or support  \n* operates autonomously  \n* exhibits self‑sufficiency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Independent> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> skos:prefLabel "Measured" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> skos:definition "measured is a quantified attribute that  \n* has been obtained using a calibrated instrument  \n* represents a numeric value  \n* corresponds to a defined unit of measurement  \n* is recorded in a data set" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Measured> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> skos:prefLabel "Nominal" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> skos:definition "nominal is a reference value that  \n    * represents the intended or design specification for a parameter  \n    * provides a baseline for comparison with measured values  \n    * is expressed in the same units as the corresponding measured quantity  \n    * is used in tolerance specifications to define acceptable deviation" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Nominal> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> skos:prefLabel "Simulated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> skos:definition "simulated is a representation that  \n* reproduces the observable behavior of a target system or phenomenon  \n* is generated by a computational or mathematical model rather than by direct measurement  \n* lacks physical embodiment of the original system  \n* serves as input for analysis, design, or validation activities  \n* operates under defined boundary conditions and parameters" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Simulated> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> skos:prefLabel "Traceable" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> skos:definition "traceable is a property that  \n&nbsp;&nbsp;* has a documented lineage of data provenance  \n&nbsp;&nbsp;* allows verification of origin through records  \n&nbsp;&nbsp;* supports reproducibility by linking to source information" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Traceable> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> skos:prefLabel "Validated" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> skos:definition "validated is a quality‑assurance status that  \n* underwent systematic verification against defined criteria  \n* demonstrated compliance with applicable standards  \n* established traceability to reference standards  \n* provides documented evidence supporting its reliability" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Validated> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ValueAttributes> .
+
+# Terms in Experimental Metadata
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Background> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeam> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeam> skos:prefLabel "Mean Beam" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeam> skos:definition "mean beam is a beam property that  \n* quantifies the arithmetic average of measured intensity values across the spatial extent of the beam  \n* is calculated by integrating intensity over the beam area and dividing by that area  \n* provides a single representative value for comparing beam uniformity and power distribution" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeam> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamPower> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamPower> skos:prefLabel "Mean Beam Power" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamPower> skos:definition "mean beam power is a power metric that  \n&nbsp;&nbsp;* represents the average optical power delivered by a beam over a defined time interval  \n&nbsp;&nbsp;* equals total optical energy emitted divided by the duration of that interval  \n&nbsp;&nbsp;* is expressed in units of watts (W)  \n&nbsp;&nbsp;* applies to both continuous‑wave and pulsed laser operation  \n&nbsp;&nbsp;* excludes instantaneous power variations, focusing on the time‑averaged value" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamPower> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanScan> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanScan> skos:prefLabel "Mean Scan" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanScan> skos:definition "mean scan is a data product that  \n* aggregates multiple individual scan measurements of a semiconductor or microelectronic sample  \n* computes the arithmetic average of corresponding data points across the scans  \n* yields a single composite image or dataset representing the central tendency of surface topography or electrical characteristics  \n* preserves the spatial resolution and coordinate system of the original scans  \n* serves as a reference baseline for comparative metrology analysis" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanScan> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamFrames> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamFrames> skos:prefLabel "Number Of Beam Frames" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamFrames> skos:definition "**number of beam frames** is a **quantitative metric** that  \n* represents the total count of discrete image frames captured during a beam‑based measurement  \n* is expressed as an integer value  \n* increments by one each time a new frame is acquired  \n* is recorded for each measurement session or experiment  \n* provides information about data volume and temporal resolution of the measurement" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#NumberOfBeamFrames> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MaximumCount> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MaximumCount> skos:prefLabel "Maximum Count" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MaximumCount> skos:definition "maximum count is a statistical measure that  \n* represents the greatest integer value observed within a defined set of items or events  \n* is determined by enumerating all occurrences and selecting the highest total  \n* is expressed as a non‑negative integer" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MaximumCount> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#XBin> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#XBin> skos:prefLabel "X Bin" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#XBin> skos:definition "x bin is a data bin that  \n* groups measurement values of the variable X into discrete intervals  \n* assigns each measurement to a specific interval based on its numeric range  \n* facilitates statistical analysis and reporting of X‑related metrology data" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#XBin> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#YBin> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#YBin> skos:prefLabel "Y Bin" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#YBin> skos:definition "y bin is a binning category that  \n    * used to group semiconductor devices based on measured electrical performance parameters  \n    * assigned during wafer‑level test to indicate compliance with specification limits  \n    * recorded in metrology data sets for statistical analysis of yield" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#YBin> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Background> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Background> skos:prefLabel "Background" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Background> skos:definition "background is a contextual element that  \n* describes the prior state or conditions surrounding a measurement  \n* includes information about sources of noise, interference, or baseline signals  \n* documents experimental setup, sample history, and environmental parameters  \n* supports interpretation, comparison, and reproducibility of data  \n* is recorded alongside primary measurement results" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Background> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamTime> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamTime> skos:prefLabel "Beam Time" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamTime> skos:definition "beam time is a scheduled research facility resource that\n* designates a specific time interval during which a user operates a particle accelerator or beamline\n* is allocated through a proposal review and scheduling process\n* provides access to the beam's particles, photons, or neutrons for data collection" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#BeamTime> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExposureTime> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExposureTime> skos:prefLabel "Exposure Time" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExposureTime> skos:definition "exposure time is a process parameter that  \n* quantifies the duration that a target material is subjected to a specified radiation source  \n* is expressed in units of time such as seconds, milliseconds, or microseconds  \n* directly determines the total radiant energy delivered to the material  \n* is set by the control system of the exposure equipment  \n* influences the degree of photochemical or physical change in the material" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ExposureTime> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamTime> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamTime> skos:prefLabel "Mean Beam Time" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamTime> skos:definition "mean beam time is a statistical metric that\n    * quantifies the average duration of beam exposure per experiment\n    * is calculated by dividing the total beam exposure time by the number of exposures\n    * is expressed in units of time such as seconds, minutes, or hours\n    * supports assessment of facility utilization and scheduling efficiency" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#MeanBeamTime> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> skos:prefLabel "Reference" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> skos:definition "Reference is a citation element that  \n* provides sufficient bibliographic details to locate the source  \n* links the current data or document to external authoritative material  \n* establishes provenance and context for the data" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#Reference> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanTime> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanTime> skos:prefLabel "Scan Time" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanTime> skos:definition "scan time is a measurement parameter that  \n* denotes the duration required to complete a scanning operation of a semiconductor or microelectronics sample  \n* is expressed in units of time such as seconds, minutes, or hours  \n* depends on instrument settings, resolution, and area coverage  \n* directly impacts data acquisition throughput and experiment scheduling" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#ScanTime> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TimeDifference> rdf:type rdfs:Class .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TimeDifference> skos:prefLabel "Time Difference" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TimeDifference> skos:definition "time difference is a temporal measurement that  \n * quantifies the interval between two distinct timestamps  \n * is expressed in standard time units (e.g., seconds, minutes, hours)  \n * results from subtracting the earlier timestamp from the later timestamp" .
+<https://data.nist.gov/od/dm/chips-metrology/tabular#TimeDifference> rdfs:subClassOf <https://data.nist.gov/od/dm/chips-metrology/tabular#ExperimentalMetadata> .
+

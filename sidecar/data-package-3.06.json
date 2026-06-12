@@ -1,0 +1,635 @@
+{
+  "profile": "https://specs.frictionlessdata.io/schemas/data-package.json",
+  "name": "nist-on-wafer-sparameter-data",
+  "title": "Test scattering parameter calibration data for on\u2011wafer measurements (10\u202fMHz\u2013110\u202fGHz)",
+  "description": "A collection of S\u2011parameter calibration data files ( *.s2p ) and auxiliary numeric tables (Z.txt, eps.txt) published by NIST. The S\u2011parameter files contain frequency\u2011dependent complex scattering parameters (S11, S21, S12, S22) referenced to 50\u202f\u03a9. The txt files contain three\u2011column numeric data related to impedance and permittivity measurements.",
+  "resources": [
+    {
+      "name": "ref_s1_g25_hf_0",
+      "path": "Ref_S1_g25_HF_0.s2p",
+      "format": "s2p",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency in GHz",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "s11_real",
+            "type": "number",
+            "description": "Real part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s11_imag",
+            "type": "number",
+            "description": "Imaginary part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          },
+          {
+            "name": "s21_real",
+            "type": "number",
+            "description": "Real part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s21_imag",
+            "type": "number",
+            "description": "Imaginary part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_real",
+            "type": "number",
+            "description": "Real part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_imag",
+            "type": "number",
+            "description": "Imaginary part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s22_real",
+            "type": "number",
+            "description": "Real part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s22_imag",
+            "type": "number",
+            "description": "Imaginary part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ref_rs_g25_hf_0",
+      "path": "Ref_Rs_g25_HF_0.s2p",
+      "format": "s2p",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency in GHz",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "s11_real",
+            "type": "number",
+            "description": "Real part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s11_imag",
+            "type": "number",
+            "description": "Imaginary part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          },
+          {
+            "name": "s21_real",
+            "type": "number",
+            "description": "Real part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s21_imag",
+            "type": "number",
+            "description": "Imaginary part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_real",
+            "type": "number",
+            "description": "Real part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_imag",
+            "type": "number",
+            "description": "Imaginary part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s22_real",
+            "type": "number",
+            "description": "Real part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s22_imag",
+            "type": "number",
+            "description": "Imaginary part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ref_rg_g25_hf_0",
+      "path": "Ref_Rg_g25_HF_0.s2p",
+      "format": "s2p",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency in GHz",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "s11_real",
+            "type": "number",
+            "description": "Real part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s11_imag",
+            "type": "number",
+            "description": "Imaginary part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          },
+          {
+            "name": "s21_real",
+            "type": "number",
+            "description": "Real part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s21_imag",
+            "type": "number",
+            "description": "Imaginary part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_real",
+            "type": "number",
+            "description": "Real part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_imag",
+            "type": "number",
+            "description": "Imaginary part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s22_real",
+            "type": "number",
+            "description": "Real part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s22_imag",
+            "type": "number",
+            "description": "Imaginary part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ref_og_g25_hf_0",
+      "path": "Ref_Og_g25_HF_0.s2p",
+      "format": "s2p",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency in GHz",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "s11_real",
+            "type": "number",
+            "description": "Real part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s11_imag",
+            "type": "number",
+            "description": "Imaginary part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          },
+          {
+            "name": "s21_real",
+            "type": "number",
+            "description": "Real part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s21_imag",
+            "type": "number",
+            "description": "Imaginary part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_real",
+            "type": "number",
+            "description": "Real part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_imag",
+            "type": "number",
+            "description": "Imaginary part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s22_real",
+            "type": "number",
+            "description": "Real part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s22_imag",
+            "type": "number",
+            "description": "Imaginary part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ref_cs_g25_hf_0",
+      "path": "Ref_Cs_g25_HF_0.s2p",
+      "format": "s2p",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency in GHz",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "s11_real",
+            "type": "number",
+            "description": "Real part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s11_imag",
+            "type": "number",
+            "description": "Imaginary part of S11",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          },
+          {
+            "name": "s21_real",
+            "type": "number",
+            "description": "Real part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s21_imag",
+            "type": "number",
+            "description": "Imaginary part of S21",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_real",
+            "type": "number",
+            "description": "Real part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s12_imag",
+            "type": "number",
+            "description": "Imaginary part of S12",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#SParameter"
+            ]
+          },
+          {
+            "name": "s22_real",
+            "type": "number",
+            "description": "Real part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealImpedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance"
+            ]
+          },
+          {
+            "name": "s22_imag",
+            "type": "number",
+            "description": "Imaginary part of S22",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Impedance",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ComplexElectromagneticParameters"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "z",
+      "path": "Z.txt",
+      "format": "txt",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency (units not explicitly stated, scientific notation)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "col2",
+            "type": "number",
+            "description": "Second column of numeric data",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart"
+            ]
+          },
+          {
+            "name": "col3",
+            "type": "number",
+            "description": "Third column of numeric data",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "eps",
+      "path": "eps.txt",
+      "format": "txt",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "description": "Frequency (units not explicitly stated, scientific notation)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "col2",
+            "type": "number",
+            "description": "Second column of numeric data",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart"
+            ]
+          },
+          {
+            "name": "col3",
+            "type": "number",
+            "description": "Third column of numeric data",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPart"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}

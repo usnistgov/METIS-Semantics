@@ -1,0 +1,209 @@
+{
+  "profile": "https://specs.frictionlessdata.io/schemas/data-package.json",
+  "name": "microwave_measurements",
+  "title": "Microwave S\u2011parameter and magnetic\u2011field measurements",
+  "description": "A collection of tabular data files containing frequency\u2011dependent magnetic\u2011field (H0, \u0394H) measurements and S\u2011parameter (S21) data recorded over a range of GHz frequencies. All values are measured with calibrated instrumentation.",
+  "resources": [
+    {
+      "name": "h0_f",
+      "path": "H0_f.dat",
+      "format": "dat",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "format": "default",
+            "description": "Excitation frequency",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "h0",
+            "type": "number",
+            "format": "default",
+            "description": "Applied magnetic field (H0)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField"
+            ]
+          },
+          {
+            "name": "h0_uncertainty",
+            "type": "number",
+            "format": "default",
+            "description": "Uncertainty of H0",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQualityAttributes"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "deltah_f",
+      "path": "DeltaH_f.dat",
+      "format": "dat",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "format": "default",
+            "description": "Excitation frequency",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "delta_h",
+            "type": "number",
+            "format": "default",
+            "description": "Change in magnetic field (\u0394H)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#MagneticField"
+            ]
+          },
+          {
+            "name": "delta_h_uncertainty",
+            "type": "number",
+            "format": "default",
+            "description": "Uncertainty of \u0394H",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#MeasurementQualityAttributes"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "s21_40ghz_run2",
+      "path": "20240412B-Run2-40.000 GHz#Final 2 pnts 0.00 Oe to 0.00 Oe 10 Hz IF -3.00 dBm.dat",
+      "format": "dat",
+      "mediatype": "text/plain",
+      "schema": {
+        "fields": [
+          {
+            "name": "frequency",
+            "type": "number",
+            "format": "default",
+            "description": "Excitation frequency",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Frequency"
+            ]
+          },
+          {
+            "name": "real_s21_1",
+            "type": "number",
+            "format": "default",
+            "description": "Real part of S21 (first measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21"
+            ]
+          },
+          {
+            "name": "imag_s21_1",
+            "type": "number",
+            "format": "default",
+            "description": "Imaginary part of S21 (first measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21"
+            ]
+          },
+          {
+            "name": "real_s21_2",
+            "type": "number",
+            "format": "default",
+            "description": "Real part of S21 (second measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21"
+            ]
+          },
+          {
+            "name": "imag_s21_2",
+            "type": "number",
+            "format": "default",
+            "description": "Imaginary part of S21 (second measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21"
+            ]
+          },
+          {
+            "name": "real_s21_3",
+            "type": "number",
+            "format": "default",
+            "description": "Real part of S21 (third measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21"
+            ]
+          },
+          {
+            "name": "imag_s21_3",
+            "type": "number",
+            "format": "default",
+            "description": "Imaginary part of S21 (third measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21"
+            ]
+          },
+          {
+            "name": "real_s21_4",
+            "type": "number",
+            "format": "default",
+            "description": "Real part of S21 (fourth measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#RealPartOfS21"
+            ]
+          },
+          {
+            "name": "imag_s21_4",
+            "type": "number",
+            "format": "default",
+            "description": "Imaginary part of S21 (fourth measurement)",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#ImaginaryPartOfS21"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}

@@ -1,0 +1,1422 @@
+{
+  "name": "euv-diffractometry-data",
+  "title": "Lab-based Multi-wavelength EUV Diffractometry Data for Critical Dimension Metrology",
+  "description": "This dataset contains measurement and simulation data from lab-based multi-wavelength extreme ultra-violet (EUV) diffractometry experiments for critical dimension metrology in semiconductor manufacturing. The data is stored in CSV files named according to the pattern LxxPyyy_zz.csv, where xx represents line width (nm), yyy represents pitch (nm), and zz represents rotation angle (degrees). Each file contains diffraction efficiencies for various orders and harmonics (21st to 31st), along with their standard deviations, normalized by the 0th order.",
+  "keywords": [
+    "EUV",
+    "diffractometry",
+    "critical dimension",
+    "metrology",
+    "semiconductor",
+    "extreme ultraviolet",
+    "harmonic",
+    "diffraction efficiency"
+  ],
+  "contributors": [
+    {
+      "title": "Bryan Barnes",
+      "role": "project lead"
+    },
+    {
+      "title": "Thom Germer",
+      "role": "co-investigator"
+    },
+    {
+      "title": "Steven Grantham",
+      "role": "co-investigator"
+    },
+    {
+      "title": "Stephanie Moffitt",
+      "role": "co-investigator"
+    },
+    {
+      "title": "Charlie Tarrio",
+      "role": "co-investigator"
+    }
+  ],
+  "sources": [
+    {
+      "title": "EUV Scatterometry Project Plan",
+      "path": "2.07 EUV Scatterometry_Barnes_Project Plan_1.2.pdf"
+    },
+    {
+      "title": "README: Measurement and simulation data from Lab-based multi-wavelength extreme ultra-violet diffractometry",
+      "path": "README_Fits.txt"
+    }
+  ],
+  "homepage": "https://www.nist.gov/",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "l57p114_full",
+      "path": "L57P114_full.csv",
+      "title": "Angular Diffraction Efficiency Measurements",
+      "description": "Contains grazing angle of incidence values and measured diffraction efficiencies for multiple orders (m1 and p1) along with their standard deviations.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "angles",
+            "type": "number",
+            "title": "Angle",
+            "description": "Grazing angle of incidence",
+            "unit": "degrees",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Angle",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c1",
+            "type": "number",
+            "title": "Measurement 1 Column 1",
+            "description": "Diffraction efficiency for measurement 1, column 1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c2",
+            "type": "number",
+            "title": "Measurement 1 Column 2",
+            "description": "Diffraction efficiency for measurement 1, column 2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c3",
+            "type": "number",
+            "title": "Measurement 1 Column 3",
+            "description": "Diffraction efficiency for measurement 1, column 3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c4",
+            "type": "number",
+            "title": "Measurement 1 Column 4",
+            "description": "Diffraction efficiency for measurement 1, column 4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c5",
+            "type": "number",
+            "title": "Measurement 1 Column 5",
+            "description": "Diffraction efficiency for measurement 1, column 5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c6",
+            "type": "number",
+            "title": "Measurement 1 Column 6",
+            "description": "Diffraction efficiency for measurement 1, column 6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c1",
+            "type": "number",
+            "title": "Parameter 1 Column 1",
+            "description": "Diffraction efficiency for parameter 1, column 1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c2",
+            "type": "number",
+            "title": "Parameter 1 Column 2",
+            "description": "Diffraction efficiency for parameter 1, column 2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c3",
+            "type": "number",
+            "title": "Parameter 1 Column 3",
+            "description": "Diffraction efficiency for parameter 1, column 3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c4",
+            "type": "number",
+            "title": "Parameter 1 Column 4",
+            "description": "Diffraction efficiency for parameter 1, column 4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c5",
+            "type": "number",
+            "title": "Parameter 1 Column 5",
+            "description": "Diffraction efficiency for parameter 1, column 5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "p1_c6",
+            "type": "number",
+            "title": "Parameter 1 Column 6",
+            "description": "Diffraction efficiency for parameter 1, column 6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency"
+            ]
+          },
+          {
+            "name": "m1_c1_std",
+            "type": "number",
+            "title": "Measurement 1 Column 1 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for measurement 1, column 1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c2_std",
+            "type": "number",
+            "title": "Measurement 1 Column 2 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for measurement 1, column 2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c3_std",
+            "type": "number",
+            "title": "Measurement 1 Column 3 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for measurement 1, column 3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c4_std",
+            "type": "number",
+            "title": "Measurement 1 Column 4 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for measurement 1, column 4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c5_std",
+            "type": "number",
+            "title": "Measurement 1 Column 5 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for measurement 1, column 5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c6_std",
+            "type": "number",
+            "title": "Measurement 1 Column 6 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for measurement 1, column 6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c1_std",
+            "type": "number",
+            "title": "Parameter 1 Column 1 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for parameter 1, column 1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c2_std",
+            "type": "number",
+            "title": "Parameter 1 Column 2 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for parameter 1, column 2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c3_std",
+            "type": "number",
+            "title": "Parameter 1 Column 3 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for parameter 1, column 3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c4_std",
+            "type": "number",
+            "title": "Parameter 1 Column 4 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for parameter 1, column 4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c5_std",
+            "type": "number",
+            "title": "Parameter 1 Column 5 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for parameter 1, column 5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c6_std",
+            "type": "number",
+            "title": "Parameter 1 Column 6 Standard Deviation",
+            "description": "Standard deviation of diffraction efficiency for parameter 1, column 6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "l52p104_full",
+      "path": "L52P104_full.csv",
+      "title": "Angle-dependent diffraction efficiency measurements",
+      "description": "Contains measured diffraction efficiencies for multiple orders (m1 and p1) as a function of incident angle, together with their standard deviations.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "angles",
+            "type": "number",
+            "title": "Incident Angle",
+            "description": "Angle of incidence measured from the surface normal",
+            "unit": "degrees",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Angle",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c1",
+            "type": "number",
+            "title": "Diffraction Efficiency m1 c1",
+            "description": "Measured diffraction efficiency for order m1, component c1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c2",
+            "type": "number",
+            "title": "Diffraction Efficiency m1 c2",
+            "description": "Measured diffraction efficiency for order m1, component c2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c3",
+            "type": "number",
+            "title": "Diffraction Efficiency m1 c3",
+            "description": "Measured diffraction efficiency for order m1, component c3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c4",
+            "type": "number",
+            "title": "Diffraction Efficiency m1 c4",
+            "description": "Measured diffraction efficiency for order m1, component c4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c5",
+            "type": "number",
+            "title": "Diffraction Efficiency m1 c5",
+            "description": "Measured diffraction efficiency for order m1, component c5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c6",
+            "type": "number",
+            "title": "Diffraction Efficiency m1 c6",
+            "description": "Measured diffraction efficiency for order m1, component c6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "p1_c1",
+            "type": "number",
+            "title": "Diffraction Efficiency p1 c1",
+            "description": "Measured diffraction efficiency for order p1, component c1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "p1_c2",
+            "type": "number",
+            "title": "Diffraction Efficiency p1 c2",
+            "description": "Measured diffraction efficiency for order p1, component c2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "p1_c3",
+            "type": "number",
+            "title": "Diffraction Efficiency p1 c3",
+            "description": "Measured diffraction efficiency for order p1, component c3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "p1_c4",
+            "type": "number",
+            "title": "Diffraction Efficiency p1 c4",
+            "description": "Measured diffraction efficiency for order p1, component c4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "p1_c5",
+            "type": "number",
+            "title": "Diffraction Efficiency p1 c5",
+            "description": "Measured diffraction efficiency for order p1, component c5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "p1_c6",
+            "type": "number",
+            "title": "Diffraction Efficiency p1 c6",
+            "description": "Measured diffraction efficiency for order p1, component c6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c1_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency m1 c1",
+            "description": "Standard deviation of the measured diffraction efficiency for order m1, component c1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c2_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency m1 c2",
+            "description": "Standard deviation of the measured diffraction efficiency for order m1, component c2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c3_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency m1 c3",
+            "description": "Standard deviation of the measured diffraction efficiency for order m1, component c3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c4_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency m1 c4",
+            "description": "Standard deviation of the measured diffraction efficiency for order m1, component c4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c5_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency m1 c5",
+            "description": "Standard deviation of the measured diffraction efficiency for order m1, component c5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "m1_c6_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency m1 c6",
+            "description": "Standard deviation of the measured diffraction efficiency for order m1, component c6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c1_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency p1 c1",
+            "description": "Standard deviation of the measured diffraction efficiency for order p1, component c1",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c2_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency p1 c2",
+            "description": "Standard deviation of the measured diffraction efficiency for order p1, component c2",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c3_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency p1 c3",
+            "description": "Standard deviation of the measured diffraction efficiency for order p1, component c3",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c4_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency p1 c4",
+            "description": "Standard deviation of the measured diffraction efficiency for order p1, component c4",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c5_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency p1 c5",
+            "description": "Standard deviation of the measured diffraction efficiency for order p1, component c5",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          },
+          {
+            "name": "p1_c6_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency p1 c6",
+            "description": "Standard deviation of the measured diffraction efficiency for order p1, component c6",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "l50p100_full",
+      "path": "L50P100_full.csv",
+      "title": "Diffraction efficiency measurements vs grazing angle of incidence",
+      "description": "Contains measured diffraction efficiency values for multiple channels and harmonic orders at varying grazing angles of incidence, together with their standard deviations.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "angles",
+            "type": "number",
+            "title": "angles",
+            "description": "Grazing angle of incidence of the measurement.",
+            "unit": "degrees",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Angle",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements"
+            ]
+          },
+          {
+            "name": "m1_c1",
+            "type": "number",
+            "title": "m1_c1",
+            "description": "Diffraction efficiency for channel 1 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c2",
+            "type": "number",
+            "title": "m1_c2",
+            "description": "Diffraction efficiency for channel 2 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c3",
+            "type": "number",
+            "title": "m1_c3",
+            "description": "Diffraction efficiency for channel 3 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c4",
+            "type": "number",
+            "title": "m1_c4",
+            "description": "Diffraction efficiency for channel 4 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c5",
+            "type": "number",
+            "title": "m1_c5",
+            "description": "Diffraction efficiency for channel 5 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c6",
+            "type": "number",
+            "title": "m1_c6",
+            "description": "Diffraction efficiency for channel 6 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c1",
+            "type": "number",
+            "title": "p1_c1",
+            "description": "Diffraction efficiency for channel 1 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c2",
+            "type": "number",
+            "title": "p1_c2",
+            "description": "Diffraction efficiency for channel 2 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c3",
+            "type": "number",
+            "title": "p1_c3",
+            "description": "Diffraction efficiency for channel 3 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c4",
+            "type": "number",
+            "title": "p1_c4",
+            "description": "Diffraction efficiency for channel 4 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c5",
+            "type": "number",
+            "title": "p1_c5",
+            "description": "Diffraction efficiency for channel 5 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c6",
+            "type": "number",
+            "title": "p1_c6",
+            "description": "Diffraction efficiency for channel 6 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c1_std",
+            "type": "number",
+            "title": "m1_c1_std",
+            "description": "Standard deviation of diffraction efficiency for channel 1 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c2_std",
+            "type": "number",
+            "title": "m1_c2_std",
+            "description": "Standard deviation of diffraction efficiency for channel 2 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c3_std",
+            "type": "number",
+            "title": "m1_c3_std",
+            "description": "Standard deviation of diffraction efficiency for channel 3 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c4_std",
+            "type": "number",
+            "title": "m1_c4_std",
+            "description": "Standard deviation of diffraction efficiency for channel 4 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c5_std",
+            "type": "number",
+            "title": "m1_c5_std",
+            "description": "Standard deviation of diffraction efficiency for channel 5 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c6_std",
+            "type": "number",
+            "title": "m1_c6_std",
+            "description": "Standard deviation of diffraction efficiency for channel 6 from measurement set 1.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c1_std",
+            "type": "number",
+            "title": "p1_c1_std",
+            "description": "Standard deviation of diffraction efficiency for channel 1 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c2_std",
+            "type": "number",
+            "title": "p1_c2_std",
+            "description": "Standard deviation of diffraction efficiency for channel 2 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c3_std",
+            "type": "number",
+            "title": "p1_c3_std",
+            "description": "Standard deviation of diffraction efficiency for channel 3 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c4_std",
+            "type": "number",
+            "title": "p1_c4_std",
+            "description": "Standard deviation of diffraction efficiency for channel 4 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c5_std",
+            "type": "number",
+            "title": "p1_c5_std",
+            "description": "Standard deviation of diffraction efficiency for channel 5 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c6_std",
+            "type": "number",
+            "title": "p1_c6_std",
+            "description": "Standard deviation of diffraction efficiency for channel 6 from measurement set 2.",
+            "unit": "",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "l55p110_full",
+      "path": "L55P110_full.csv",
+      "title": "Diffraction Efficiency vs Grazing Angle of Incidence",
+      "description": "Contains measured diffraction efficiencies for multiple harmonics (c1\u2011c6) from two measurement sets (m1 and p1) and their associated standard deviations, recorded as a function of grazing angle of incidence.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "angles",
+            "type": "number",
+            "title": "Grazing Angle of Incidence",
+            "description": "Angle between incoming radiation and surface plane, measured in degrees.",
+            "unit": "degrees",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Independent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#AngularMeasurements",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Angle",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#GrazingAngleOfIncidence"
+            ]
+          },
+          {
+            "name": "m1_c1",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 1, Harmonic 1",
+            "description": "Measured diffraction efficiency for the first harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c2",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 1, Harmonic 2",
+            "description": "Measured diffraction efficiency for the second harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c3",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 1, Harmonic 3",
+            "description": "Measured diffraction efficiency for the third harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c4",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 1, Harmonic 4",
+            "description": "Measured diffraction efficiency for the fourth harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c5",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 1, Harmonic 5",
+            "description": "Measured diffraction efficiency for the fifth harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c6",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 1, Harmonic 6",
+            "description": "Measured diffraction efficiency for the sixth harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c1",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 2, Harmonic 1",
+            "description": "Measured diffraction efficiency for the first harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c2",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 2, Harmonic 2",
+            "description": "Measured diffraction efficiency for the second harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c3",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 2, Harmonic 3",
+            "description": "Measured diffraction efficiency for the third harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c4",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 2, Harmonic 4",
+            "description": "Measured diffraction efficiency for the fourth harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c5",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 2, Harmonic 5",
+            "description": "Measured diffraction efficiency for the fifth harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c6",
+            "type": "number",
+            "title": "Diffraction Efficiency, Measurement 2, Harmonic 6",
+            "description": "Measured diffraction efficiency for the sixth harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiency",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c1_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 1, Harmonic 1",
+            "description": "Standard deviation of the measured diffraction efficiency for the first harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c2_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 1, Harmonic 2",
+            "description": "Standard deviation of the measured diffraction efficiency for the second harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c3_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 1, Harmonic 3",
+            "description": "Standard deviation of the measured diffraction efficiency for the third harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c4_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 1, Harmonic 4",
+            "description": "Standard deviation of the measured diffraction efficiency for the fourth harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c5_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 1, Harmonic 5",
+            "description": "Standard deviation of the measured diffraction efficiency for the fifth harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "m1_c6_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 1, Harmonic 6",
+            "description": "Standard deviation of the measured diffraction efficiency for the sixth harmonic from measurement set 1.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c1_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 2, Harmonic 1",
+            "description": "Standard deviation of the measured diffraction efficiency for the first harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c2_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 2, Harmonic 2",
+            "description": "Standard deviation of the measured diffraction efficiency for the second harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c3_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 2, Harmonic 3",
+            "description": "Standard deviation of the measured diffraction efficiency for the third harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c4_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 2, Harmonic 4",
+            "description": "Standard deviation of the measured diffraction efficiency for the fourth harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c5_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 2, Harmonic 5",
+            "description": "Standard deviation of the measured diffraction efficiency for the fifth harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          },
+          {
+            "name": "p1_c6_std",
+            "type": "number",
+            "title": "Standard Deviation of Diffraction Efficiency, Measurement 2, Harmonic 6",
+            "description": "Standard deviation of the measured diffraction efficiency for the sixth harmonic from measurement set 2.",
+            "unit": "unitless",
+            "tags": [
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Dependent",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#Measured",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#StatisticalDispersions",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#DiffractionEfficiencyStandardDeviation",
+              "https://data.nist.gov/od/dm/chips-metrology/tabular#HarmonicNumber"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
