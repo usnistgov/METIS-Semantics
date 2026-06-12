@@ -24,7 +24,7 @@ This repository includes the following taxonomy
    - https://metis.nist.gov Public CHIPS Metrology website
    - https://data.nist.gov/od/id/pdr0-0002 METIS Collection Landing Page
 
-# Taxonomy Principles
+# Semantic Principles
 
 Source: R. Arp, B. Smith, and A. D. Spear, Building Ontologies with Basic Formal Ontology. London, England: MIT Press, 2015.
 
