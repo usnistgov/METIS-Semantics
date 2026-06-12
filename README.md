@@ -31,18 +31,14 @@ Source: R. Arp, B. Smith, and A. D. Spear, Building Ontologies with Basic Formal
 
 ## LICENSE
 
-Each repository will contain a plain-text file named `LICENSE.md`
-or `LICENSE` that is phrased in compliance with the Public Access
-to NIST Research [*Copyright, Fair Use, and Licensing Statement
-for SRD, Data, and Software*][nist-open], which provides
-up-to-date official language for each category in a blue box.
-
 - The version of [LICENSE.md](LICENSE.md) included in this
   repository is approved for use.
 - Updated language on the [Licensing Statement][nist-open] page
   supersedes the copy in this repository. You may transcribe the
   language from the appropriate "blue box" on that page into your
   README.
+- For more information see NIST Research [*Copyright, Fair Use, and Licensing Statement
+for SRD, Data, and Software*][nist-open]
 
 -team
 [nist-code]: https://code.nist.gov
