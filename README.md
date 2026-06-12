@@ -12,7 +12,7 @@ This repository includes the following taxonomy
 4. CHIPS Metrology Ontology - The taxonomies are core building blocks of this ontology in addition to research structure analysis.   
 
    
-1. Contact information
+## Contact information
    - Gretchen Greene, METIS Project Lead
       - NIST ADLP, Research Data and Computing Office
       - gretchen.greene@nist.gov
@@ -20,7 +20,7 @@ This repository includes the following taxonomy
       - NIST ADLP, Research Data and Computing Office
       - june.lau@nist.gov
      
-1. Related Material
+## Related Information
    - https://metis.nist.gov Public CHIPS Metrology website
    - https://data.nist.gov/od/id/pdr0-0002 METIS Collection Landing Page
 
