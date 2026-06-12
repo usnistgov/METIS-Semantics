@@ -21,8 +21,8 @@ This repository includes the following taxonomy
       - june.lau@nist.gov
      
 ## Related Information
-   - https://metis.nist.gov Public CHIPS Metrology website
-   - https://data.nist.gov/od/id/pdr0-0002 METIS Collection Landing Page
+   - Public [CHIPS METIS website](https://metis.nist.gov )
+   - [METIS Collection Landing Page](https://data.nist.gov/od/id/pdr0-0002)
 
 # Semantic Principles
 
