@@ -1,7 +1,7 @@
 # METIS Semantics
 
 This repository is used in development of the METIS - Metrology Exchange to Innovate in Semiconductors [semantic assets](https://www.nist.gov/metis/semantic-assets).  The data model for METIS
-includes a rich array of metadata and data using standards based structure.  The semantic models are developed from research spanning across the [CHIPS Metrology program grand challenge research domains](https://www.nist.gov/chips/research-development-programs/metrology-program).   
+includes a rich array of metadata and data using standards based structures applied to domain specific terminology, generated in the course of research and development.  The semantic models are developed from research spanning across the [CHIPS Metrology grand challenge program areas](https://www.nist.gov/chips/research-development-programs/metrology-program).   
 
 ## README.md
 
@@ -44,6 +44,10 @@ Source: R. Arp, B. Smith, and A. D. Spear, Building Ontologies with Basic Formal
   README.
 - For more information see NIST Research [*Copyright, Fair Use, and Licensing Statement
 for SRD, Data, and Software*][nist-open]
+
+## DISCLAIMER
+
+- detailed content may be enhanced with the assistance of generative super intelligence tools.   To the greatest extent,  where  content includes use of these tools in term definitions,  additional annotation is provided.  This work is still in the development stage.
 
 -team
 [nist-code]: https://code.nist.gov
