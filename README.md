@@ -25,7 +25,9 @@ This repository includes the following taxonomy
    - [METIS Collection Landing Page](https://data.nist.gov/od/id/pdr0-0002)
    - [CHIPS Metrology Program](https://www.nist.gov/chips/research-development-programs/metrology-program)
 
-## Semantic Principles
+## Semantic Reference Material
+
+Miles, Alistair, and Sean Bechhofer, editors. SKOS Simple Knowledge Organization System Reference. W3C Recommendation, W3C, 18 Aug. 2009
 
 Source: R. Arp, B. Smith, and A. D. Spear, Building Ontologies with Basic Formal Ontology. London, England: MIT Press, 2015.
 
