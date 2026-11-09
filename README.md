@@ -8,8 +8,8 @@ includes a rich array of metadata and data using standards based structure.  The
 This repository includes the following taxonomy
 1. METIS Collection Taxonomy - Developed to categorize hierarchical domain terminology to navigate the METIS Collection of digital products. The taxonomy developed for METIS will be included in this repository for development and sharing.  The taxonomy is formalized in multiple representations to support METIS taxonomic tagging of products, to enhance discovery,  in addition to more standardized vocabulary format, [SKOS](https://www.w3.org/TR/skos-reference/).
 2. Quantities Taxonomy - This taxonomy is developed to semantically represent measurement data contained in products hosted in the METIS Collection.  
-3. Controlled-Vocabulary
-4. CHIPS Metrology Ontology - The taxonomies are core building blocks of this ontology in addition to research structure analysis.   
+3. Controlled-Vocabulary - the vocabulary is still in development,  derived from a subset of CHIPS Metrology project data.   This is still in prototyping phase
+4. CHIPS Metrology Ontology - The taxonomies are core building blocks of this ontology in addition to research project team structural analysis.   See additional details in /ontology subfolder.
 
    
 ## Contact information
