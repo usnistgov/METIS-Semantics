@@ -29,6 +29,8 @@ This repository includes the following taxonomy
 
 Miles, Alistair, and Sean Bechhofer, editors. SKOS Simple Knowledge Organization System Reference. W3C Recommendation, W3C, 18 Aug. 2009
 
+Lebo, Timothy, et al., editors. PROV-O: The PROV Ontology. W3C Recommendation, World Wide Web Consortium (W3C), 30 Apr. 2013, www.w3.org/TR/prov-o/.
+
 Moreau, L., & Missier, P. (Eds.). (2013). PROV-DM: The PROV Data Model (W3C Recommendation). World Wide Web Consortium (W3C). w3.org
 
 Source: R. Arp, B. Smith, and A. D. Spear, Building Ontologies with Basic Formal Ontology. London, England: MIT Press, 2015.
